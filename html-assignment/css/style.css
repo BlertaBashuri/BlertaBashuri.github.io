@@ -1,0 +1,88 @@
+
+/* change font family and increase the font size 18px */
+
+body {
+    background-color: #f7f7e8;
+    font-family: 'Montserrat', sans-serif;
+   font-size: 18px;
+   color: #19456b;
+}
+/* applied same background color to header and footer elements */
+h1, footer {
+    background-color: #19456B;
+
+}
+/* added a class of site-title to the main heading of the site and changed a color */
+.site-title{
+    color: white;
+
+}
+/* text align in the center of the blockquote */
+.center{
+    text-align: center;
+}
+/* added a class to change the shape of the image */
+.circular{
+    border-radius: 20%;
+}
+/* added a a box-shadow with 0 horizontal and vertical placement, 2px of the blur, 1px of the spread and black colour*/
+#my-image {
+    box-shadow:0px 0px 2px 1px black; 
+}
+ /* changed the style of the list bullets from cirle to square */
+ ol{
+    list-style: square;
+}
+/* Styling the list with a dotted line */
+.border{
+    border-top: dotted;
+    border-width: 5px;
+    
+    }
+   
+    /* changed the background color of the list for the odd listed */
+   
+ol li:nth-child(odd){
+    background-color: #16C79A;
+      
+}
+/*  Removing the bullets from the navigation list*/
+nav ul{
+    list-style: none;
+}
+/* removing the underline from the links */
+nav ul a {
+    list-style: none;
+     text-decoration: none;
+     
+}
+/* 	Add a background and border to the links */
+nav ul a,
+nav ul a:link{
+    color: #19456B;
+    background-color: #16C79A;
+    outline-style: dotted;
+   outline-width: 1px;
+   outline-color: #19456b;
+   box-shadow: 2px 3px 2px black;
+}
+nav ul a:visited{
+    color:black;
+}
+
+/* Change the background colour on hover  */
+nav ul a:hover{
+    color:white;
+    text-decoration:underline;
+    background-color:#19456B;
+    }
+    /* when mouse is on the link it will be underline */
+nav ul a:focus{
+text-decoration:underline;
+
+}
+
+nav ul:active{
+    background-color: cornsilk;
+    box-shadow: 2px 3px 2px black;
+}
