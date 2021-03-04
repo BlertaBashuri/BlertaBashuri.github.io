@@ -54,6 +54,7 @@ font-size:1rem;
 
 }
 h1{
+
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -74,7 +75,7 @@ nav ul li {
   nav ul li a{
   text-decoration: none;
   color:black;
-padding:70px;
+padding:110px;
   
   
   }
@@ -98,10 +99,12 @@ h2 {
   padding-bottom:20px;
 }
 p{
+  font-size:1rem;
   text-align:left;
   padding-right: 10px;
   padding-bottom: 10px;
   padding-left:10px;
+  line-height: 21px;
   
 }
 h3{
@@ -170,12 +173,12 @@ padding-bottom:5px;
     background-attachment: fixed;
     background-position: center;
     background-size:auto;
-    margin-left: 25%;
-    margin-right:25%;
+    margin-left:15%;
+    margin-right:15%;
 }
 .lonestarfish{
   float:left;
-  width:35%;
+  width:28%;
  padding-top:5px;
  padding-left: 10px;
  padding-right: 20px;
