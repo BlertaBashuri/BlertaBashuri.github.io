@@ -45,20 +45,260 @@ table {
 /* CSS Reset */
 /* Custom CSS */
 html{
+	display:block;
 	font-family:'Poppins', sans-serif;
 	font-size:14px;
 	box-sizing: border-box;
+
+}
+	body{
 	line-height: 1.5;
 }
 h1 h2 h3 h4{
 	font-weight:bold;
+	
+		
 }
 h1{
 	font-size:5.063rem;
+	
+	
 }
 h2{
 	font-size:3.375rem;
+	font-weight:bold;
 }
 h3{
 	font-size:2.25rem;
+	padding:10px 0;
+	font-weight:bold;
+	margin-left:10px;
+	
 }
+h4{
+	font-size:1.5rem;
+	margin-left:10px;
+}
+h5{
+	font-size:2.25rem;
+}
+p{
+	margin:10px;
+	
+}
+.btn{
+	background-color: #C68F2D;
+	border: none;
+	color: #282828;
+	padding: 15px 10px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 12px;
+	margin: 2px 5px;
+	cursor: pointer;
+
+}
+.container{
+	padding: 1.5rem;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+.header1{
+	
+	background-color:#282828;
+	
+}
+.logo{
+	padding:1rem;
+	
+	
+}
+.nav-list{
+	text-align:center;
+	
+}
+.nav-list a{
+	text-decoration: none;
+	color: #C68F2D;
+	padding:1em 0;
+    display:block;
+}
+.nav-list a:hover{
+	background-color:#C68F2D;
+	color:#282828;
+}
+
+
+	.current a{
+		color: #222222;
+	}
+	
+	li.current{
+		background-color: #C68F2D;
+		margin:1rem;
+		
+		
+	}
+	.main-nav input[type=text] {
+		
+	padding: 6px;
+	margin: 6px;
+	border: solid 1px;
+	width:80%;
+	}
+	/* to take care lATER THE SEARCH BUTTON */
+	.main-nav button{
+		float: right;
+		width: 10%;
+		padding:5px;
+		background: #282828;
+		border: 1px solid #C68F2D; 
+		font-size:1rem ;
+		position:absolute;
+		
+		cursor: pointer;
+	}
+	.btn1{
+		
+			text-decoration:none;
+			color:white;
+			background-color: black;
+			padding:20px;
+			border-radius:1px;
+			display:inline-block;
+			margin-left:10px;
+			margin-bottom:10px
+		
+	}
+	.btn2{
+		text-decoration:none;
+			color:white;
+			background-color: black;
+			padding:20px;
+			border: solid 2px #C68F2D;
+			border-radius:1px;
+			display:inline-block;
+			
+	}
+	.intro{
+		position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+		
+	}
+	.intro .img3{vertical-align: center;
+		display:block;
+		width:100%;
+		
+
+
+	}
+	.intro .content2{
+		position: absolute;
+		top:40px;
+		bottom: 40px;
+		
+		background:rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+		color: #f1f1f1;
+		width: 98%;
+		padding: 5px;
+	  }
+	  .content2 h1{
+		  font-size: 2.5rem;
+		  font-weight:bolder;
+		
+	  }
+	  .content2 p{
+		  font-size:10px;
+	  }
+	
+	
+		
+	.aboutus{
+		background-color: #FFF192;
+		padding:5px;
+	}
+	.img2{
+		display: block;
+		width:100%;
+	}
+	.img1{
+		width:100%;
+	
+	
+	}
+	.digital{
+		background-color: #FFF192;
+		margin-bottom:10px;
+			
+	}
+	.vision{
+		position: relative;
+		text-align: left;
+		color: white;
+	}
+	.vision img{
+	width:100%;	
+	height:300px;
+	}
+	.vis{
+		position: absolute;
+		bottom: 40px;
+		left: 16px;
+	}
+	.member{
+		background-color:#FFF192 ;
+	
+	}
+	.heading h4{
+		border-bottom: 3px solid #d4af37 ;
+		margin-right:10px;
+
+	}
+
+.contact{
+	margin-left:20px;
+}
+	
+	.button2 {
+		background-color: #222222;
+		color: #c78c06;
+		padding: 0.5;
+		margin-top: 0.5em;
+	}
+	table, th, td {
+		border: 1px solid black;
+		padding: 1em;
+	}
+	
+	table {
+		width: 100%;
+		border-collapse: collapse;
+	}
+	
+	th {
+		background-color: #FFF192;
+	}
+	footer{
+		background-color:#282828;
+		color:#c78c06;
+		padding:20px;
+		margin:10px;
+	}
+	map{
+		width:100%;
+	}
+	footer p{ 
+		margin-left:-5px;
+
+	}
+	footer a{
+		
+		color:#c78c06;
+	}
+	
+	
