@@ -412,7 +412,7 @@ input[type=text] {
 .button2 {
 	background-color: #282828;
 	color: #c78c06;
-	padding: 0.5;
+	padding: 0.5px;
 	margin-top: 0.5em;
 }
 
