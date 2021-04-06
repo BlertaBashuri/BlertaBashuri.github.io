@@ -211,7 +211,7 @@ p {
 .nav-list a {
 	text-decoration: none;
 	color: #C68F2D;
-	padding: 10px;
+	padding: 1.5rem;
 	display: block;
 	text-align: center;
 
@@ -224,7 +224,7 @@ p {
 
 .nav-list li:nth-child(1) {
 	background-color: #c78c06;
-	padding: 10px;
+	padding: 1.5rem;
 	text-align: start;
 }
 
@@ -233,17 +233,12 @@ p {
 	color: #282828;
 }
 
-input[type=text] {
-	padding: 6px;
-	margin: 6px;
-	border: solid 1px;
-	width: 80%;
-}
+
 
 /* Search button */
 #search {
-
-	width: calc(90% - 2em);
+	
+	width: calc(100% - 2rem);
 	box-sizing: border-box;
 	border-radius: 2px;
 	vertical-align: center;
@@ -256,13 +251,16 @@ input[type=text] {
 
 .fa-search {
 
-	padding: 6px;
+	padding:.9rem;
 	border: 1px solid #c78c06;
 	font-size: 1rem;
 	color: #c78c06;
 	background-color: black;
 }
-
+.fa-search:hover{
+	background-color: #c78c06;
+	color: #282828
+}
 /* buttons of the services class */
 .btn1 {
 
