@@ -185,6 +185,7 @@ p {
 }
 
 .container {
+	max-width: 1200px;
 	padding: 0;
 	margin: 0 auto;
 }
@@ -198,28 +199,29 @@ p {
 
 .header1 {
 
-	background-color: #282828;
+	background-color: #222;
 	padding: 10px;
 }
 /* Navigation List */
+
 .nav-list {
 	text-align: center;
-	background-color: #282828;
+	background-color:#222;
 
 }
 
 .nav-list a {
 	text-decoration: none;
-	color: #C68F2D;
-	padding: 1.5rem;
+	color: #c78c06;
+	padding: 1rem;
 	display: block;
 	text-align: center;
 
 }
 
 .nav-list a:hover {
-	background-color: #C68F2D;
-	color: #282828;
+	background-color:#c78c06;
+	color: #222;
 }
 
 .nav-list li:nth-child(1) {
@@ -230,14 +232,14 @@ p {
 
 .current a {
 	background-color: #c78c06;
-	color: #282828;
+	color: #222;
 }
 
 
 
 /* Search button */
 #search {
-	
+	padding:1rem;
 	width: calc(100% - 2rem);
 	box-sizing: border-box;
 	border-radius: 2px;
@@ -251,22 +253,22 @@ p {
 
 .fa-search {
 
-	padding:.9rem;
+	padding:1rem;
 	border: 1px solid #c78c06;
-	font-size: 1rem;
+	font-size: 2rem;
 	color: #c78c06;
-	background-color: black;
+	background-color: #222;
 }
 .fa-search:hover{
 	background-color: #c78c06;
-	color: #282828
+	color: #222;
 }
 /* buttons of the services class */
 .btn1 {
 
 	text-decoration: none;
 	color: white;
-	background-color: black;
+	background-color: #222;
 	padding: 20px;
 	border-radius: 1px;
 	display: inline-block;
@@ -276,7 +278,7 @@ p {
 
 .btn1:hover {
 	background-color: white;
-	color: #282828;
+	color: #222;
 }
 
 /* content 1 section banner*/
@@ -296,9 +298,9 @@ p {
 }
 /* button content1 */
 .btn {
-	background-color: #C68F2D;
+	background-color: #c78c06;
 	border: none;
-	color: #282828;
+	color:#222;
 	padding: 15px 10px;
 	text-align: center;
 	text-decoration: none;
@@ -309,13 +311,13 @@ p {
 }
 
 .btn:hover {
-	background-color: black;
+	background-color: #222;
 	color: white;
 }
 
 /* About Us Section */
 .aboutus {
-	background-color: #FFF192;
+	background-color: #ffe6ac;
 	max-width: 100%;
 }
 .content .aboutus {
@@ -329,7 +331,7 @@ p {
 }
 
 .services div>div {
-	background-color: #FFF192;
+	background-color:#ffe6ac;
 	margin: 1em 0;
 }
 
@@ -352,16 +354,16 @@ p {
 .btn2 {
 	text-decoration: none;
 	color: white;
-	background-color: black;
+	background-color: #222;
 	padding: 20px;
-	border: solid 2px #C68F2D;
+	border: solid 2px #c78c06;
 	border-radius: 1px;
 	display: inline-block;
 }
 
 .btn2:hover {
 	background-color: white;
-	color: black;
+	color: #222;
 }
 
 .vision {
@@ -397,18 +399,18 @@ p {
 }
 
 .team-list div {
-	background-color: #FFF192;
+	background-color: #ffe6ac;
 	width: 100%;
 }
 
 .team-list h4 {
-	border-bottom: 3px solid #d4af37;
+	border-bottom: 3px solid #c78c06;
 	margin-right: 10px;
 }
 
 /* contact us section */
 .button2 {
-	background-color: #282828;
+	background-color: #222;
 	color: #c78c06;
 	padding: 0.5px;
 	margin-top: 0.5em;
@@ -423,7 +425,7 @@ p {
 table,
 th,
 td {
-	border: 1px solid black;
+	border: 1px solid #222;
 	padding: 1em;
 }
 
@@ -448,11 +450,11 @@ textarea {
 }
 
 th {
-	background-color: #FFF192;
+	background-color: #ffe6ac;
 }
 /* footer section */
 footer {
-	background-color: #282828;
+	background-color: #222;
 	color: #c78c06;
 	padding: 20px;
 }
@@ -484,7 +486,7 @@ footer a {
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		background-color: #282828;
+		background-color: #222;
 		padding: 10px;
 	}
 
@@ -494,7 +496,7 @@ footer a {
 	}
 
 	.nav-list li:nth-child(1) {
-		background-color: #282828;
+		background-color: #222;
 
 
 	}
