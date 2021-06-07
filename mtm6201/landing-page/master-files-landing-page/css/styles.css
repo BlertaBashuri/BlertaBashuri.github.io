@@ -1,0 +1,195 @@
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html{
+    background-color:#f7f7ff;
+    display: block;
+	box-sizing: border-box;
+
+}
+ body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+ }
+ main{
+  margin-left: 25px;
+	margin-right: 25px;
+ }
+.img_logo{
+    width:100px;
+    margin:20px;
+}
+h1{
+    font-size:2.5rem;
+}
+h2{
+    font-size:2.5rem;
+}
+h3{
+    font-size:1rem;
+    font-weight: bolder;
+    margin-bottom:10px;
+}
+
+.image{
+    display: block;
+  width: 250px;
+  padding-top:20px;
+  padding-bottom:20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.apply{
+    border-radius: 10px;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 5px 8px 8px 5px lightgray;
+    
+  }
+  .apply input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #f7f7ff;
+    border-radius: 10px;
+    box-sizing: border-box;
+    background-color:#f7f7ff;
+    width:100%;
+    color:grey;
+  }
+  
+  .apply input[type=submit] {
+    width: 100%;
+    background-color: #57EEAB;
+    color: black;
+    font-weight:bold;
+    padding: 10px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size:large;
+    
+  }
+  
+  .apply input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+ span a{
+   text-decoration: none;
+   color:red;
+ }
+
+footer{
+  background-color:#fffd8c;
+  margin-top:30px;
+  padding:20px 30px 20px 30px;
+}
+footer p{
+  margin-bottom:20px;
+}
+.calculate{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.calculate input{
+ 
+  padding: 1rem;
+  border-radius: 8px;
+  border: none;
+  width: 100%;
+   color:grey;
+    
+}
+.calculate div{
+flex-basis: calc(50% - 30px);       
+    
+  }
+  #hours{
+    width:20%;
+    
+    padding-right:60px;
+   
+ 
+  }
+  .calculate div:nth-child(3) {
+    flex-basis: 100%;
+  }
+
+  .footer button {
+    width: 100%;
+    font-weight: bold;
+    background-color: #ff8480;
+    padding: 10px;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    margin: 8px 0;
+    cursor: pointer;
+    font-size:large;
+}
+button:hover {
+  background-color:#f7f7ff;
+  color:#ff8480
+}
+
+.socialmedia{
+margin-top:10px;
+display: flex;
+flex-wrap: wrap;
+justify-content:space-around;
+
+}
+
+
+
+.img1{
+  border-radius: 50%;
+
+}
