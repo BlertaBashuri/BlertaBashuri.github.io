@@ -252,6 +252,14 @@ justify-content:center;
  
 }
 @media screen and (min-width: 1280px) {
+  .img_logo{
+    
+    margin-left:80px;
+}
+  main{
+    margin-left: 75px;
+    margin-right: 75px;
+   }
   .dash{
     display:grid;
     grid-template-areas:'texti logo apply';
@@ -280,17 +288,22 @@ justify-content:center;
   font-size:25px;
   letter-spacing: 2px;
 }
+.footer-area{
+  margin-left:50px;
+  margin-right:50px;
+ 
+}
 .action{
   display: inline-flex;
   flex-wrap:wrap;
  flex-basis:auto;
  
+
+
 }
 
 .socialmedia a{
-  margin:0 10px;
+  margin:0 20px;
 }
-.calculate{
-  margin-right:550px;
-}
+
 }
