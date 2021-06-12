@@ -152,9 +152,10 @@ main {
   margin-right: 25px;
 }
 
-/* Setting the Font Size for all the Heading 1 of the page */
+/* Setting the Font Size and weight for all the Heading 1 of the page */
 h1 {
   font-size: 2.5rem;
+  font-weight:bold;
 }
 
 /* Setting the Font Size for all the Heading 2 of the page also the weight of the heading*/
