@@ -131,14 +131,14 @@ table {
 
 /*---------------------I have started working for the mobile version----------------------- */
 
-/* Seting a background color and displaying as a box the Html of the landing page */
+/*  Seting a background color and displaying as a box the Html of the landing page */
 html {
   background-color: #f7f7ff;
   display: block;
   box-sizing: border-box;
 }
 
-/* In the body section is set up the font family that is going to be used for the entire page, also the line height the beteween the line and the fonts size */
+/*  In the body section is set up the font family that is going to be used for the entire page, also the line height the beteween the line and the fonts size */
 body {
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
