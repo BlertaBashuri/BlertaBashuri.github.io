@@ -472,5 +472,13 @@ button:hover {
   .socialmedia a {
     margin: 0 20px;
   }
-
+.socialmedia a:nth-child(1){
+  order:1;
+}
+.socialmedia a:nth-child(4){
+  order:2;
+}
+.img1{
+  border-radius: 5%;
+}
 }
