@@ -1,0 +1,484 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*---------------------I have started working for the mobile version----------------------- */
+
+/*  Seting a background color and displaying as a box the Html of the landing page */
+html {
+  background-color: #f7f7ff;
+  display: block;
+  box-sizing: border-box;
+}
+
+/*  In the body section is set up the font family that is going to be used for the entire page, also the line height the beteween the line and the fonts size */
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+
+}
+
+/* Separating the main section from the other sections of the page and setting the margins to the left and to the righ */
+main {
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+/* Setting the Font Size and weight for all the Heading 1 of the page */
+h1 {
+  font-size: 2.5rem;
+  font-weight:bold;
+}
+
+/* Setting the Font Size for all the Heading 2 of the page also the weight of the heading*/
+h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+/* /* Setting the Font Size for all the Heading 2 of the page the height and the margin bottom  */
+h3 {
+  font-size: 1rem;
+  font-weight: bolder;
+  margin-bottom: 10px;
+}
+
+/* Green Top Left green Logo resized to be adjusted for the mobile version */
+.img_logo {
+  width: 10%;
+  margin: 30px;
+}
+
+/* The image of the girl in the motorcycle resizing the width changing setting up the top and bottom padding and center it by using the margin auto */
+.image {
+  display: block;
+  width: 40%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Apply section/ Setting up the rectangle container by styling it with border radius , padding and shadow using box shadow */
+.apply {
+  border-radius: 10px;
+  background-color: white;
+  padding: 20px 30px;
+  box-shadow: 2px 8px 8px 2px grey;
+
+}
+
+/* This input doesnt need any label so I disabled the display */
+label {
+  display: none;
+}
+
+/* Styling the input text are by giving a width of 100%, in this case most of the time the input are displayed as block or inline block , I gave this areas a border radius, background color, text color and a width of a 100% */
+.apply input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #f7f7ff;
+  border-radius: 10px;
+  box-sizing: border-box;
+  background-color: #f7f7ff;
+  width: 100%;
+  color: grey;
+}
+
+/* Styling the DRIVE US BUTTON by giving a specific green color, black text color and bold weigh , padding on 4 sides also this button doesnt have a border so I disabbled it*/
+.apply button[type=submit] {
+  width: 100%;
+  background-color: #57EEAB;
+  color: black;
+  font-weight: bold;
+  padding: 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: large;
+
+}
+
+/* Set up a darker color of green for the DRVIVE WITH US hover button */
+.apply input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Styling the linked text by taking out the underline and giving it a red color */
+.spani a {
+  text-decoration: none;
+  color: red;
+}
+
+/* Styling Footer are by giving it a yellow color, giving a margin so it will create space between the footer and the main section also padding for the inside content */
+footer {
+  background-color: #fffd8c;
+  margin-top: 30px;
+  padding: 20px 30px 20px 30px;
+  box-sizing: border-box;
+}
+
+/* Styling the paragraph of the footer area by giving it a margin bottom to separated from the input text area */
+footer p {
+  margin-bottom: 20px;
+}
+
+/* Giving a flex display to the calculate class that includes the hours, city , calculate button */
+.calculate {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+/* styling the input text area of the calculate class in the footer area by giving it a padding, border radius and a grey color for the textand padding to the text */
+.calculate input {
+  box-sizing: border-box;
+  padding: 1rem;
+  border-radius: 10px;
+  border: none;
+  width: 100%;
+  color: grey;
+  margin: 8px 0;
+
+}
+
+/* Styling Hours input area to have a smaller size than the city inout area that is the double of the size by using flex grow in this case a 0 */
+.hours {
+  flex-grow: 0;
+  margin-right: 10px;
+}
+
+/* Growing the size of the city input text are double the size od the hours input area by using flex grow */
+.city {
+  flex-grow: 2;
+}
+
+/* Styling the button by giving it a flex grow as it has to have the double of the size */
+.button_2 {
+  flex-grow: 2;
+
+}
+
+
+/* stlying the footer button by giving it a full width , a border radius a specific colour disable the border that the button has  giving a color and a width to the text inside the button*/
+.footer button {
+  width: 100%;
+  font-weight: bold;
+  background-color: #ff8480;
+  padding: 10px;
+  border: none;
+  color: white;
+  border-radius: 10px;
+  margin: 8px 0;
+  cursor: pointer;
+  font-size: large;
+}
+
+/* Styling when the Calculate button will hover with a different button and text color */
+button:hover {
+  background-color: #f7f7ff;
+  color: #ff8480
+}
+
+/* Apllying flex display for the social media container and giving a margin  */
+.socialmedia {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+
+/* applying margin to the social media elements */
+.socialmedia a {
+  margin: 0 auto;
+}
+
+/* applying a border radius the the first social media icon  as it shows to be a circle */
+.img1 {
+  border-radius: 50%;
+
+}
+
+/* Styling the site for 700px and up*/
+@media screen and (min-width: 700px) {
+
+  /* increasing all the Heading 1 of the page and make them bold */
+  h1 {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+
+  /* increasr all the paragraphs of the site */
+  p {
+    font-size: 18px;
+
+  }
+
+  /* Increasing the left and right margin of the main section */
+  main {
+    margin-right: 50px;
+    margin-left: 50px;
+  }
+
+  /* increase image width */
+  .image {
+    width: 450px;
+  }
+
+/* Center the text down the DRIVE WITH US button */
+   .spani p {
+    text-align: center;
+  }
+
+  /* Increasing the font of the calculate button and applying padding and margin left */
+  .footer button {
+    font-size: 25px;
+    margin-left: 20px;
+    padding: 10px
+  }
+
+  /* Sharing the space in between three elements Hours-Input area, City-Input area, and the Calculate button aliging them horizontally */
+  .hours {
+
+    flex-basis: calc(20% - 20px);
+  }
+
+  .city {
+    flex-basis: calc(30% - 20px);
+  }
+
+  .button_2 {
+    flex-basis: calc(50% - 20px);
+    margin-right: 40px;
+  }
+
+  /* Increasing the space between the icons by increasing the left and right margin */
+  .socialmedia a {
+    margin: 0 30px;
+
+  }
+
+}
+
+/* Styling the site for 1080px screen and up */
+@media screen and (min-width: 1080px) {
+
+  /* applying a left margin to the logo on the top left size  */
+  .img_logo {
+
+    margin-left: 80px;
+  }
+
+  /* applying increased margin to the left and right for the main section */
+  main {
+    margin-left: 75px;
+    margin-right: 75px;
+  }
+
+  /* Applying grid for the dash section that contains the text, image, apply now area setting up also the margins in this case negative value so they text can overlap the image and the apply now area can overlap the image*/
+  .dash {
+    display: grid;
+    grid-template-areas: 'texti logo apply';
+    grid-gap: 20px;
+  }
+
+  .dash .prime {
+    grid-area: texti;
+    margin-right: -80px;
+  }
+
+  .dash .prime p {
+    margin-top: 40px;
+  }
+
+  .dash.image {
+    grid-area: logo;
+    margin-left: -10px;
+    margin-right: -20px;
+  }
+
+  .dash .apply {
+    grid-area: apply;
+    margin-left: -20px;
+    margin-bottom: 30px;
+
+  }
+
+  /* using the Id of the DRIVEWITH US Button by giving some space in between the text letters and reducing the padding of the button */
+  #drive {
+    padding: 10px;
+    font-size: 25px;
+    letter-spacing: 2px;
+  }
+
+  /* reducing the size of the pargraph text in the apply now area in the end of the DRIVE WITH US button */
+  
+  .spani p {
+    font-size: 12px;
+    
+  }
+
+  /* Increasing the margin of the footer are on the left and on the right side */
+  .footer-area {
+    margin-left: 50px;
+    margin-right: 50px;
+
+  }
+
+  /* applying the flex display for the action class in the form section that includes the input form of the footer , Calculate button and the Social Media Icons also separating them by using the justify content*/
+  .action {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: auto;
+    width: 100%;
+    justify-content: space-between;
+
+
+  }
+
+  /* increasing the space in between the social media icons */
+  .socialmedia a {
+    margin: 0 20px;
+  }
+.socialmedia a:nth-child(1){
+  order:1;
+}
+.socialmedia a:nth-child(4){
+  order:2;
+}
+.img1{
+  border-radius: 5%;
+}
+}
