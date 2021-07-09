@@ -1,342 +1,372 @@
-*{
-    box-sizing:border-box;
+* {
+    box-sizing: border-box;
 }
-body{
-    font-family: 'Montserrat',  sans-serif;
+/* Family font of the entire website */
+body {
+    font-family: 'Montserrat', sans-serif;
     background-color: #f7f7ff;
-  
 }
-.container1 {
-    width:90%;
-    margin:auto;
-   
-}
-
-header img{
-    width:100px;
-    height:auto;
-    
-}
-h1{
-    font-size:3.5rem;
+/* ---------------------HOME/Mobile Version--------------------- */
+/* heading1 font size and font weight for mobile */
+h1 {
+    font-size: 56px;
     font-weight: lighter;
-   
-    
 }
-h2{
-    font-size:2rem;
-    font-weight:500;
-   
+/* heading2 font size and font weight for mobile */
+h2 {
+    font-size: 2rem;
+    font-weight: 500;
 }
-h3{
-    font-size:1.3rem;
+/* heading3 font size and font weight for mobile */
+h3 {
+    font-size: 1.3rem;
     font-weight: normal;
-  
-
 }
-p{
-    font-size:16px;
-    font-weight:lighter;
+/* paragraph font size, font weight and space between the lines (line-height) for mobile */
+p {
+    font-size: 16px;
+    font-weight: lighter;
     line-height: 1.4rem;
 }
-
-h1, h2, h3, p{
+/* aligning in the center with paddings top and bottom for each tag h1, h2, h3, p */
+h1,
+h2,
+h3,
+p {
     text-align: center;
-    width:90%;
-    margin:auto;
-    padding-bottom:10px;
-    padding-top:10px;
-  
-}
+    width: 90%;
+    margin: auto;
+    padding-bottom: 10px;
+    padding-top: 10px;
 
-.bg-img h4{
+}
+/* Logo of the website setting a width of 100px and a top margin */
+.logo1 {
+    width: 100px;
+    margin-top: 10px;
+}
+/* Hidding the Heading 4 that is located in the center of the banner image to be displayed in Desktop Version */
+.bg-img h4 {
     display: none;
 }
-.icecream img{
+/* Fixed little image on the right side of the website which in desktop version has an animation */
+.icecream img {
     position: fixed;
- width:5%;
-bottom: 20px;
-right:20px;
-transform: scaleX(-1);
-
+    width: 5%;
+    bottom: 20px;
+    right: 20px;
+    transform: scaleX(-1);
 }
-
-.bg-img{
+/* Banner Image used with background url no repeating with text aligned in the center and with a size of 100% */
+.bg-img {
     background: url('../images/bg-image.jpeg');
     background-repeat: no-repeat;
-    display:block;
-    text-align:center;
-    background-size:100%;
-  
-    
-}
-.logo1{
-    margin-top:10px;
-}
-.logo1:hover{
-    animation-name:logo;
-    animation-duration: 3s;
-   animation-timing-function: ease-in-out;
-}
-@keyframes logo{
-    
-    10%{
-      transform: rotate(40deg) scale(2);
-    }
-    25%{
-      transform:rotate(-90deg);
-    }
-    50%{
-      transform: rotate(360deg);
-    }
-  } 
-.navigation a{
-    display:block;
-    margin-top:5px;
-    text-decoration: none;
-    color:#0B6C79;
-    font-weight:bold;
-    text-shadow:2px 2px 4px white;
-    padding:0.5rem;
-   
-}
-.navigation a:hover{
-    background-color:rgb(11,108,121);opacity:0.8;
-    color: white;
-    text-shadow:none;
-}
-.welcome{
-    margin-bottom:0.5rem;
- background: url('../images/icecream-2.jpeg');
-
-    background-repeat: no-repeat;   
- height:auto;
-    background-size: cover; 
-    padding:30px 0 30px 0;
-   
-}
-
-.overlay{
-    background-color: rgba(248, 247, 216, 0.7);
-    padding-top:20px;
-    padding-bottom:10px;
-
-}
-.about_us{
-   background-image: url("../images/ice-cream-3.jpeg");
-   background-repeat: no-repeat;   
-   background-size: 100%; 
-   height:auto;
-   padding:30px 0 30px 0;
-   margin-bottom:1rem;
- 
-}
-.gallery{
-    margin-bottom:1rem;
-}
-
-.color_me img{
-    width: 100%;
-    padding-bottom:10px;
-   
-}
-.heading_first{
-    font-weight: 600;
-   
-    animation:color2 6s infinite ease-in-out;
-  
-}
-@keyframes color2{
-    
-    0% { color: #DF2935;}
-    20% { color: #688E26;}
-    50% { color: #7B4B94; }
-    70% { color: #FDCA40;}
-    100% { color:#D991BA; }
-    
-}
-
-.gallery img{
-    width: 100%;
-    padding-bottom:10px;
-   
-}
-.menu{
-    background-color:rgb(255, 165,165, 0.2);
+    display: block;
+    text-align: center;
     background-size: 100%;
 }
-.menu p{
-    padding-bottom:50px;
+/* adding animation to the logo any time we hover */
+.logo1:hover {
+    animation-name: logo;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
 }
+/* Logo animation Keyframes */
+@keyframes logo {
 
-footer{
-    background-color:#0B6C79;
-    padding:1rem 0;
-  
+    10% {
+        transform: rotate(40deg) scale(2);
+    }
+
+    25% {
+        transform: rotate(-90deg);
+    }
+
+    50% {
+        transform: rotate(360deg);
+    }
 }
-.container p{
-    color:white;
-}
-.email{
+/* setting the Navigation elements (a) for Mobile version by displaying it as block, taking out the text decoration in this case the underline, giving a paddin, color, drop shadow and bold*/
+.navigation a {
+    display: block;
+    margin-top: 5px;
     text-decoration: none;
-    color:white;
-    font-weight:300;
+    color: #0B6C79;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px white;
+    padding: 10px;
 }
-.social-links img{
-   width:30%;
-   
+/* Display of the Navigation Elements when we hover. A background of specific color everytime we hover , color of text change when hover also added opacity to the background and text */
+.navigation a:hover {
+    background-color: rgb(11, 108, 121);
+    opacity: 0.8;
+    color: white;
+    text-shadow: none;
 }
-.social-links{
-    display:flex;
-    margin-top:2rem;
+/* Welcome section added a url background image and a bottom margin without repetition and a size of a cover background*/
+.welcome {
+    margin-bottom: 10px;
+    background: url('../images/icecream-2.jpeg');
+background-repeat: no-repeat;
+    height: auto;
+    background-size: cover;
+    padding: 30px 0 30px 0;
+}
+/* a class of overlay which is located on top of the welcome background image so the text will be more visible */
+.overlay {
+    background-color: rgba(248, 247, 216, 0.7);
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+/* About Us Section is added a url background image with a heading and text on top with no repetition of the backgrounf and a size of 100%*/
+.about_us {
+    background-image: url("../images/ice-cream-3.jpeg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: auto;
+    padding: 30px 0 30px 0;
+    margin-bottom: 1rem;
+}
+/* container of the Color me And Gallery with auto margins and a width of 90% */
+.container1 {
+    width: 90%;
+    margin: auto;
+
+} 
+/* The container of the images Gallery added a bottom margin of 15 px */
+.gallery {
+    margin-bottom: 15px;
+}
+/* The color me class targeting the images of that container by giving a width of 100% and a padding bottom for each of them*/
+.color_me img {
+    width: 100%;
+    padding-bottom: 10px;
+}
+/* Adding an animation to the Color ME heading by changing instantly the colours */
+.heading_first {
+    font-weight: 600;
+    animation: color2 6s infinite ease-in-out;
+}
+@keyframes color2 {
+
+    0% {
+        color: #DF2935;
+    }
+
+    20% {
+        color: #688E26;
+    }
+
+    50% {
+        color: #7B4B94;
+    }
+
+    70% {
+        color: #FDCA40;
+    }
+
+    100% {
+        color: #D991BA;
+    }
+}
+/* The Galery class targeting the images of that container by giving a width of 100% and a padding bottom for each of them*/
+.gallery img {
+    width: 100%;
+    padding-bottom: 10px;
+}
+/* Adding a background color and making a width of 100% */
+.menu {
+    background-color: rgb(255, 165, 165, 0.2);
+    background-size: 100%;
+}
+/* Giving a padding to the paragraphs of MENU Section to the HomePage */
+.menu p {
+    padding-bottom: 50px;
+}
+/* Styling with a background color the footer , Giving a top and bottom padding to it */
+footer {
+    background-color: #0B6C79;
+    padding: 15px 0;
+
+}
+/* Styling the paragraph of the footer */
+.container p {
+    color: white;
+}
+/* Taking out the underline style of the email adress and putting a heavier font weight */
+.email {
+    text-decoration: none;
+    color: white;
+    font-weight: 300;
+}
+/* reducing the width of the social media images */
+.social-links img {
+    width: 30%;
+}
+/* Flex Display to the Social media container with the images inside and a justify of spacing around and aligning the container in the center */
+.social-links {
+    display: flex;
+    margin-top: 2rem;
     justify-content: space-around;
-   text-align: center;
-   margin-left:30px;
+    text-align: center;
+    margin-left: 30px;
 }
+/* styling the search area container together with the button a flex display and a centering it by using justify content */
 .search-area {
-	display: flex;
+    display: flex;
     padding: 1rem;
-    border:none;
- justify-content: center;
- margin-top:20px;
- margin-left:30px;
+    border: none;
+    justify-content: center;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+/* styling the search box by taking out the border and giving a border radius and margin right */
+.search {
+    margin-right: 5px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+}
+/* giving a padding to the ice cream icon to the button in the search button in the footer section */
+.fa-ice-cream {
+    padding: 0 10px;
+}
+/* Styling the button in general not specifically by giving a color of a background and a colour to the icon that is on top of the button */
+button {
+    border: none;
+    border-radius: 10px;
+    background-color: white;
+    color: #0B6C79;
+}
+/* styling the button when we hover */
+button:hover {
+    background-color: #FFA5A5;
+    color: white;
 }
 
-.search{
-    margin-right:5px;
-    padding:10px;
-    border:none;
-    border-radius:10px;
-}
-.fa-ice-cream{
-    padding:0 10px;
-}
-button{
-    
-    border:none;
-    border-radius:10px;
-   background-color: white;
-   color: #0B6C79;
-}
-
-button:hover{
-    background-color:pink;
-    color:white;
-}
 /* -------------About US -----------*/
-.navigation3 a{
-    display:block;
-    margin-top:5px;
-   
+/* Changing the color of the Navigation list text */
+.navigation3 a {
+    display: block;
+    margin-top: 5px;
     text-decoration: none;
-    color:#C58F00;
-    font-weight:bold;
-    text-shadow:1px 1px 2px white;
-    padding:0.5rem;
-   
+    color: #C58F00;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px white;
+    padding: 0.5rem;
 }
-.navigation3 a:hover{
-    background-color:white;opacity:0.9;
+/* Changing the color of the Navigation list text and background when we hover */
+.navigation3 a:hover {
+    background-color: white;
+    opacity: 0.9;
     color: #a0d6b4;
-    text-shadow:none;
+    text-shadow: none;
 }
-
-.bg-img3{
+/* changing the background Image by using the background image url  */
+.bg-img3 {
     background: url('../images/bg2.jpeg');
     background-repeat: no-repeat;
-    width:100%;
-    display:block;
-    text-align:center;
-    background-size:100%;
-    height:290px;
-    
+    width: 100%;
+    display: block;
+    text-align: center;
+    background-size: 100%;
+    height: 290px;
 }
-.bg-img3 h1{
+/* Hiding the heading1 of the background image on top down the navigation list */
+.bg-img3 h1 {
     display: none;
-  
 }
-.about_aboutus h2{
-    margin-top:30px;
-    margin-bottom:20px;
-    font-weight:200;
-    font-size:2.5rem;
+/* styling the Heading 2 of the About Us page */
+.about_aboutus h2 {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-weight: 200;
+    font-size: 2.5rem;
 }
-.backu{
-    display:none;
+/* not displaying the image that will replace the other image on desktop version */
+.backu {
+    display: none;
 }
-.abo_img1{
-    width:100%;
-   padding-bottom:20px;
-    
- 
+/* Styling the image that will be shown in the mobile version */
+.abo_img1 {
+    width: 100%;
+    padding-bottom: 20px;
 }
-.abo_img{
-    display:none;
+/* hiding the 4 images that will be shown on the tablet version */
+.abo_img {
+    display: none;
 }
+/* changin the colour of the footer to match with the navigation list */
+.footer3 {
+    background-color: #C58F00;
+    padding: 1.5rem 0;
+    margin-top: 20px;
 
-.footer3{
-    background-color:#C58F00;
-    padding:1.5rem 0;
-    margin-top:20px;
-  
 }
-.about_aboutus p{
-  line-height:1.7rem;
+/* Setting a line height for the paragraph of the About Us section */
+.about_aboutus p {
+    line-height: 1.7rem;
 }
-.button3{ 
-        color:#C58F00;
+/* styling by changing the button colour */
+.button3 {
+    color: #C58F00;
 }
-.button3:hover{
-    background-color:#a0d6b4;
-    color:white;
-}
-/* _______CONTACT US_____________ */
-.navigation2 a{
-    display:block;
-    margin-top:5px;
-    text-decoration: none;
-    color:#0B6C79;
-    font-weight:bold;
-    text-shadow:2px 2px 4px white;
-    padding:0.5rem;
-   
-}
-.navigation2 a:hover{
-    background-color:#b48395;opacity:0.9;
+/* styling the button of the search area in the footer when we hover */
+.button3:hover {
+    background-color: #a0d6b4;
     color: white;
-    text-shadow:none;
 }
 
-.bg-img2{
+/* _______CONTACT US_____________ */
+/* changing the colour of the navigation list for the About Us page */
+.navigation2 a {
+    display: block;
+    margin-top: 5px;
+    text-decoration: none;
+    color: #0B6C79;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px white;
+    padding: 0.5rem;
+}
+/* styling the background colour and the text coulour of the button when we hover  */
+.navigation2 a:hover {
+    background-color: #b48395;
+    opacity: 0.9;
+    color: white;
+    text-shadow: none;
+}
+/*  changing the background Image by using the background image url */
+.bg-img2 {
     background: url('../images/bg-2.jpeg');
     background-repeat: no-repeat;
-    width:100%;
-    display:block;
-    text-align:center;
-    background-size:100%;
-    height:290px;
-    
+    width: 100%;
+    display: block;
+    text-align: center;
+    background-size: 100%;
+    height: 290px;
 }
-.bg-img2 h1{
+/* Hiding the heading1 of the background image on top down the navigation list*/
+.bg-img2 h1 {
     display: none;
-  
 }
 
-.contacton div{
- width:90%;
-    margin-right:auto;
-    margin-left:auto;
-  
+.contacton div {
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+
 
 }
-.contacton h2{
-    color:#b48395;
+
+.contacton h2 {
+    color: #b48395;
     font-weight: 300;
-    padding-bottom:20px;
-    padding-top:30px;
+    padding-bottom: 20px;
+    padding-top: 30px;
 }
+
 .contacton input[type=text] {
-   
+
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -344,9 +374,9 @@ button:hover{
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
-  }
-  
-  .contacton input[type=submit] {
+}
+
+.contacton input[type=submit] {
     width: 100%;
     background-color: #b48395;
     color: white;
@@ -355,11 +385,12 @@ button:hover{
     border: none;
     border-radius: 4px;
     cursor: pointer;
-  }
-  .contacton textarea{
-      width:100%;
-      margin: 10px 0;
-      width: 100%;
+}
+
+.contacton textarea {
+    width: 100%;
+    margin: 10px 0;
+    width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
@@ -367,576 +398,682 @@ button:hover{
     border-radius: 4px;
     box-sizing: border-box;
 
-  }
-  .contacton input[type=submit]:hover {
+}
+
+.contacton input[type=submit]:hover {
     background-color: #26428b;
-  }
-  .form2{
+}
+
+.form2 {
     background-color: #faebe9;
     border-radius: 1rem;
     box-shadow: 5px 5px 10px darkgrey;
-    padding:0.25rem 1.5rem;
+    padding: 0.25rem 1.5rem;
 
-  }
-  .infor div {
+}
+
+.infor div {
     border-radius: 5px;
-   padding: 20px;
-  }
-
-  .map iframe{
-    width:100%;
-       padding-bottom:30px;    
-  }
- 
-  .footer2{
-    background-color:#b48395;
-    padding:1rem 0;
-  
-}
-.button2{
-    color:#b48395;
-}
-.button2:hover{
-    background-color:#26428b;
-    color:white;
-}
-@media (min-width:700px){
-  
-  
-h1{
-    font-size:40px;
-    font-weight: lighter;
-   
-    
-}
-h2{
-    font-size:32px;
-    font-weight:500;
-   
-}
-h3{
-    font-size:24px;
-    font-weight: normal;
-  
-
-}
-p{
-    font-size:18px;
-    font-weight:lighter;
-    line-height: 1.7rem;
+    padding: 20px;
 }
 
-.bg-img{
-    background-size:100%;
-    height:460px;
-    padding-top:20px;
-}
-.navigation a:hover{
-    background-color:white;
-    color: purple;
-    text-shadow:none;
-}
-.navigation{
-    display:flex;
-    align-items:center;
-    justify-content:space-around;
-  background:white;
-  border-radius: 100px;  
-  height:50px;
-  margin:10px 10px;
- 
-}
-.navigation div:nth-child(1){
-order:4;
-}
-.navigation div:nth-child(3){
-    order:3;
-}
-.navigation div:nth-child(2){
-    order:2;
-}
-.navigation div:nth-child(4){
-    order:5;
-}
-.navigation div:nth-child(5){
-    order:6;
-}
-.gradient{
-    font-size:50px;
-    font-weight: bolder;
-    background: -webkit-linear-gradient(#02aab0,#ef629f);
-    background-clip:border-box;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+.map iframe {
+    width: 100%;
+    padding-bottom: 30px;
 }
 
-.welcome{
-    margin-top:30px;
-    margin-bottom:20px;
-    background-image:url("../images/welcome.jpeg");
-    color:white;
-}
-.overlay{
-  background-color: rgba(12, 9, 16, 0.7);
-}
-.about_us{
-    background-image: url("../images/icecream-loadedindulgences.png");
-    background-repeat: no-repeat;   
-    background-size: 100%; 
-    height:auto;
-    padding:20px 0 20px 0;
-    margin-bottom:1rem;
-  color:white;
- }
- .overlay2{
-    background-color: rgba(133, 173, 219, 0.7);
-   
-     
- }
-.gallery{
-    display:grid;
-   column-gap: 30px;
-    grid-template-rows:repeat(2, 1fr); 
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: 
-    "pic1 pic2"
-    "pic3 pic4";
-
-}
-.gallery div:nth-child(1){
-    grid-area:pic1;
-}
-.gallery div:nth-child(2){
-    grid-area:pic2;
-}
-.gallery div:nth-child(3){
-    grid-area:pic3;
-}
-.gallery div:nth-child(4){
-    grid-area:pic4;
-}
-
-.color_me{
-   
-    display:grid;
-    column-gap: 30px;
-    grid-template-rows:repeat(2, 1fr); 
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-areas:
-    "img1 img2"
-    "img3 img4";
-}
-.color_me div:nth-child(1){
-    grid-area: img1;    
-}
-.color_me div:nth-child(2){
-    grid-area: img2;
-}
-.color_me div:nth-child(3){
-    grid-area: img3;
-}
-.color_me div:nth-child(4){
-    grid-area: img4;
-}
-.color_me img{
-    margin-bottom:25px;
-}
-.gallery img{
-    margin-bottom:25px;
-}
-
-.container1 h2{
-    margin-top:10px;
-    margin-bottom:10px;
-
-}
-
-.images h2{
-    margin-top:10px;
-    margin-bottom:10px;
-
-}
-footer{
-    margin-top:30px;
-}
-
-.search{
-    border: solid 2px white;
-    background-color: #0B6C79;
-
-}
-.search::placeholder{
-    color:white;
-}
-.fo{
-    display:flex;
-  justify-content:space-between;
-  margin-left:20px;
-  margin-right:20px;
-
-    
-}
-.social-links{
-    margin-top:auto;
-    margin-bottom:auto;
-     width:30%;
- }
-/* ------------ABOUT US-------------------------- */
-
-.bg-img3{
-    background-size:100%;
-    height:460px;
-    padding-top:20px;
-}
-.navigation3 a:hover{
-    background-color:white;
-    color: #26428b;
-    text-shadow:none;
-}
-.navigation3 a{
-   color:#C58F00;
-}
-.navigation3{
-   
-    display:flex;
-    align-items:center;
-    justify-content:space-around;
-  background:white;
-  border-radius: 100px;  
-  height:50px;
-  margin:10px 10px;
- 
-}
-.navigation3 div:nth-child(1){
-order:4;
-}
-.navigation3 div:nth-child(3){
-    order:3;
-}
-.navigation3 div:nth-child(2){
-    order:2;
-}
-.navigation3 div:nth-child(4){
-    order:5;
-}
-.navigation3 div:nth-child(5){
-    order:6;
-}
-.navigation3 a:hover{
-    background-color:white;
-    color: #a0d6b4;
-    text-shadow:none;
-}
-.about_aboutus h2{
-    margin-top:30px;
-    margin-bottom:20px;
-    font-weight:200;
-    font-size:3.5rem;
-}
-
-.about_aboutus img{
-    width:100%;
-    height:auto;
-    padding:0 20px 20px 20px; 
-   
- 
-}
-.about_aboutus p{
-    line-height:1.9rem;
-  }
-.abo_img1{
-    display:none;
-}
-.abo_img{
-  row-gap: 15px;
-    width:100%;
-    padding-top:20px;
-    padding-left:20px;
-    padding-right:20px;
-    display:grid;
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: 
-    "aku1 aku2"
-    "aku3 aku4"  
-}
-.abo_img div:nth-child(1){
-    grid-area:aku1;
-}
-.abo_img div:nth-child(2){
-    grid-area:aku2;
-}
-.abo_img div:nth-child(3){
-    grid-area:aku3;
-}
-.abo_img div:nth-child(4){
-    grid-area:aku4;
-}
-
-#search3{
-    border: solid 2px white;
-    background-color: #C58F00;
-
-}
- /* ------------- CONTACT US-------------------*/
- 
- .bg-img2{
-    background-size:100%;
-    height:460px;
-    padding-top:20px;
-}
-.navigation2 a:hover{
-    background-color:white;
-    color: #26428b;
-    text-shadow:none;
-}
-.navigation2 a{
-   color:#b48395;
-}
-.navigation2{
-   
-    display:flex;
-    align-items:center;
-    justify-content:space-around;
-  background:white;
-  border-radius: 100px;  
-  height:50px;
-  margin:10px 10px;
- 
-}
-.navigation2 div:nth-child(1){
-order:4;
-}
-.navigation2 div:nth-child(3){
-    order:3;
-}
-.navigation2 div:nth-child(2){
-    order:2;
-}
-.navigation2 div:nth-child(4){
-    order:5;
-}
-.navigation2 div:nth-child(5){
-    order:6;
-}
-
-#search2{
-    border: solid 2px white;
+.footer2 {
     background-color: #b48395;
+    padding: 1rem 0;
 
 }
 
+.button2 {
+    color: #b48395;
 }
 
-@media (min-width:1280px){
-    .container{
-        width:1230px;
-        margin-left:auto;
-        margin-right:auto;
-    }
-    
-    h1{
-        font-size:48px;
+.button2:hover {
+    background-color: #26428b;
+    color: white;
+}
+
+@media (min-width:700px) {
+
+
+    h1 {
+        font-size: 40px;
         font-weight: lighter;
-       
-        
+
+
     }
-    h2{
-        font-size:36px;
-        font-weight:500;
-       
+
+    h2 {
+        font-size: 32px;
+        font-weight: 500;
+
     }
-    h3{
-        font-size:28px;
+
+    h3 {
+        font-size: 24px;
         font-weight: normal;
-      
-    
+
+
     }
-    p{
-        font-size:20px;
-        font-weight:lighter;
+
+    p {
+        font-size: 18px;
+        font-weight: lighter;
+        line-height: 1.7rem;
+    }
+
+    .bg-img {
+        background-size: 100%;
+        height: 460px;
+        padding-top: 20px;
+    }
+
+    .navigation a:hover {
+        background-color: white;
+        color: purple;
+        text-shadow: none;
+    }
+
+    .navigation {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        background: white;
+        border-radius: 100px;
+        height: 50px;
+        margin: 10px 10px;
+
+    }
+
+    .navigation div:nth-child(1) {
+        order: 4;
+    }
+
+    .navigation div:nth-child(3) {
+        order: 3;
+    }
+
+    .navigation div:nth-child(2) {
+        order: 2;
+    }
+
+    .navigation div:nth-child(4) {
+        order: 5;
+    }
+
+    .navigation div:nth-child(5) {
+        order: 6;
+    }
+
+    .gradient {
+        font-size: 50px;
+        font-weight: bolder;
+        background: -webkit-linear-gradient(#02aab0, #ef629f);
+        background-clip: border-box;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .welcome {
+        margin-top: 30px;
+        margin-bottom: 20px;
+        background-image: url("../images/welcome.jpeg");
+        color: white;
+    }
+
+    .overlay {
+        background-color: rgba(12, 9, 16, 0.7);
+    }
+
+    .about_us {
+        background-image: url("../images/icecream-loadedindulgences.png");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        height: auto;
+        padding: 20px 0 20px 0;
+        margin-bottom: 1rem;
+        color: white;
+    }
+
+    .overlay2 {
+        background-color: rgba(133, 173, 219, 0.7);
+
+
+    }
+
+    .gallery {
+        display: grid;
+        column-gap: 30px;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+            "pic1 pic2"
+            "pic3 pic4";
+
+    }
+
+    .gallery div:nth-child(1) {
+        grid-area: pic1;
+    }
+
+    .gallery div:nth-child(2) {
+        grid-area: pic2;
+    }
+
+    .gallery div:nth-child(3) {
+        grid-area: pic3;
+    }
+
+    .gallery div:nth-child(4) {
+        grid-area: pic4;
+    }
+
+    .color_me {
+
+        display: grid;
+        column-gap: 30px;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+            "img1 img2"
+            "img3 img4";
+    }
+
+    .color_me div:nth-child(1) {
+        grid-area: img1;
+    }
+
+    .color_me div:nth-child(2) {
+        grid-area: img2;
+    }
+
+    .color_me div:nth-child(3) {
+        grid-area: img3;
+    }
+
+    .color_me div:nth-child(4) {
+        grid-area: img4;
+    }
+
+    .color_me img {
+        margin-bottom: 25px;
+    }
+
+    .gallery img {
+        margin-bottom: 25px;
+    }
+
+    .container1 h2 {
+        margin-top: 10px;
+        margin-bottom: 10px;
+
+    }
+
+    .images h2 {
+        margin-top: 10px;
+        margin-bottom: 10px;
+
+    }
+
+    footer {
+        margin-top: 30px;
+    }
+
+    .search {
+        border: solid 2px white;
+        background-color: #0B6C79;
+
+    }
+
+    .search::placeholder {
+        color: white;
+    }
+
+    .fo {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 20px;
+        margin-right: 20px;
+
+
+    }
+
+    .social-links {
+        margin-top: auto;
+        margin-bottom: auto;
+        width: 30%;
+    }
+
+    /* ------------ABOUT US-------------------------- */
+
+    .bg-img3 {
+        background-size: 100%;
+        height: 460px;
+        padding-top: 20px;
+    }
+
+    .navigation3 a:hover {
+        background-color: white;
+        color: #26428b;
+        text-shadow: none;
+    }
+
+    .navigation3 a {
+        color: #C58F00;
+    }
+
+    .navigation3 {
+
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        background: white;
+        border-radius: 100px;
+        height: 50px;
+        margin: 10px 10px;
+
+    }
+
+    .navigation3 div:nth-child(1) {
+        order: 4;
+    }
+
+    .navigation3 div:nth-child(3) {
+        order: 3;
+    }
+
+    .navigation3 div:nth-child(2) {
+        order: 2;
+    }
+
+    .navigation3 div:nth-child(4) {
+        order: 5;
+    }
+
+    .navigation3 div:nth-child(5) {
+        order: 6;
+    }
+
+    .navigation3 a:hover {
+        background-color: white;
+        color: #a0d6b4;
+        text-shadow: none;
+    }
+
+    .about_aboutus h2 {
+        margin-top: 30px;
+        margin-bottom: 20px;
+        font-weight: 200;
+        font-size: 3.5rem;
+    }
+
+    .about_aboutus img {
+        width: 100%;
+        height: auto;
+        padding: 0 20px 20px 20px;
+
+
+    }
+
+    .about_aboutus p {
+        line-height: 1.9rem;
+    }
+
+    .abo_img1 {
+        display: none;
+    }
+
+    .abo_img {
+        row-gap: 15px;
+        width: 100%;
+        padding-top: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+            "aku1 aku2"
+            "aku3 aku4"
+    }
+
+    .abo_img div:nth-child(1) {
+        grid-area: aku1;
+    }
+
+    .abo_img div:nth-child(2) {
+        grid-area: aku2;
+    }
+
+    .abo_img div:nth-child(3) {
+        grid-area: aku3;
+    }
+
+    .abo_img div:nth-child(4) {
+        grid-area: aku4;
+    }
+
+    #search3 {
+        border: solid 2px white;
+        background-color: #C58F00;
+
+    }
+
+    /* ------------- CONTACT US-------------------*/
+
+    .bg-img2 {
+        background-size: 100%;
+        height: 460px;
+        padding-top: 20px;
+    }
+
+    .navigation2 a:hover {
+        background-color: white;
+        color: #26428b;
+        text-shadow: none;
+    }
+
+    .navigation2 a {
+        color: #b48395;
+    }
+
+    .navigation2 {
+
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        background: white;
+        border-radius: 100px;
+        height: 50px;
+        margin: 10px 10px;
+
+    }
+
+    .navigation2 div:nth-child(1) {
+        order: 4;
+    }
+
+    .navigation2 div:nth-child(3) {
+        order: 3;
+    }
+
+    .navigation2 div:nth-child(2) {
+        order: 2;
+    }
+
+    .navigation2 div:nth-child(4) {
+        order: 5;
+    }
+
+    .navigation2 div:nth-child(5) {
+        order: 6;
+    }
+
+    #search2 {
+        border: solid 2px white;
+        background-color: #b48395;
+    }
+}
+
+@media (min-width:1280px) {
+    .container {
+        width: 1280px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    h1 {
+        font-size: 48px;
+        font-weight: lighter;
+
+
+    }
+
+    h2 {
+        font-size: 36px;
+        font-weight: 500;
+
+    }
+
+    h3 {
+        font-size: 28px;
+        font-weight: normal;
+
+
+    }
+
+    p {
+        font-size: 20px;
+        font-weight: lighter;
         line-height: 2.3rem;
     }
-   .bg-img{
-    background-size:100%;
-    height:550px;
-   }
-  .bg-img h4{
-      display:block;
-      font-size:50px;
-      font-weight: 400;
-      color:#0B6C79;
-     margin-top:200px;
-    
-     padding:30px;
-  }
-  .bg-img h4:hover{
-    
-    animation:color1 3s infinite ease-in-out;
-  
-}
-@keyframes color1{
-    
-    0% { color: red; }
-    0% { color: white; }
-    50% { color: purple; }
-    70% { color: yellow; }
-    100% { color: pink; }
-    
-}
-.icecream img{
-    position: fixed;
- width:3%;
-bottom: 20px;
-right:20px;
-transform: scaleX(-1);
 
-}
-
-  .icecream img:hover{
-    
-        animation-name:img1;
-        animation-duration: 3s;
-       animation-timing-function: ease-in-out;
+    .bg-img {
+        background-size: 100%;
+        height: 550px;
     }
-    @keyframes img1{
-        
-        10%{
-          transform: rotate(40deg) scale(2);
+
+    .bg-img h4 {
+        display: block;
+        font-size: 50px;
+        font-weight: 400;
+        color: #0B6C79;
+        margin-top: 200px;
+        padding: 30px;
+    }
+
+    .bg-img h4:hover {
+        animation: color1 3s infinite ease-in-out;
+
+    }
+
+    @keyframes color1 {
+        0% {
+            color: red;
         }
-        25%{
-          transform:rotate(-90deg);
+
+        0% {
+            color: white;
         }
-        50%{
-          transform: rotate(360deg);
+
+        50% {
+            color: purple;
         }
-}
-.search{
-    padding-right:120px;
-  
 
-}
-.info{
-    display:flex;
-}
-.container1{
-    display:grid;
-   column-gap: 100px;
-   grid-template-rows: repeat(1, 1fr);
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: 
-    "heading1 heading2"
-    "colorme images2"
-   
+        70% {
+            color: yellow;
+        }
 
-}
-.heading_first{
-    grid-area:heading1; 
-}
-.heading_second{
-    grid-area:heading2; 
-}
-.color_me{
-    grid-area: colorme;  
-}
-.images{
-    grid-area: images2;
-}
-/* ________ABOUT____________ */
-.about_h1 h1{
-    display: block;
-    color:#C58F00;
-    font-size:72px;
-    font-weight: 100;
-    margin-top:200px;
-    margin-bottom:50px;
-}
-.abo_img{
-    display:none;
-}
-.about_aboutus h2:hover{
-    color:#C58F00;
-}
-.about_aboutus p{
-    line-height:2rem;
-  }
-.about_aboutus{
-    display:grid;
-    align-items: center;     
-    justify-items: center;
-    grid-template-rows: repeat(1, 1fr);
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: 
-    "heado heado heado"
-    "para1 foto1 para2"
-}
-.about_aboutus h2{
-    grid-area:heado;
-}
-.about_aboutus {
-    margin-left:20px;
-    margin-right: 20px;
-    
-}
-.para1{
-    color:#C58F00;
-    grid-area: para1;
-    text-align: left;
-}
-.backu{
- display:grid;
-    grid-area:foto1;
-  margin-top:20px;
-}
-.para2{
-    color:#C58F00;
-    grid-area:para2;
-    text-align: left;
-}
+        100% {
+            color: pink;
+        }
+
+    }
+
+    .icecream img {
+        position: fixed;
+        width: 3%;
+        bottom: 20px;
+        right: 20px;
+        transform: scaleX(-1);
+
+    }
+
+    .icecream img:hover {
+
+        animation-name: img1;
+        animation-duration: 3s;
+        animation-timing-function: ease-in-out;
+    }
+
+    @keyframes img1 {
+
+        10% {
+            transform: rotate(40deg) scale(2);
+        }
+
+        25% {
+            transform: rotate(-90deg);
+        }
+
+        50% {
+            transform: rotate(360deg);
+        }
+    }
+
+    .search {
+        padding-right: 120px;
 
 
+    }
 
- /* ________CONTACT____________ */
- 
- .bg-img2{
-    background-size:100%;
-    height:550px;
-   }
-   .bg-img2 h1{
-    display:block;
-    text-shadow: 4px 4px 4px #b48395;
-    font-size:50px;
-    font-weight: 300;
-    color:#0B6C79;
-   margin-top:200px;
-   padding:30px;
-}
+    .info {
+        display: flex;
+    }
+
+    .container1 {
+        display: grid;
+        column-gap: 100px;
+        grid-template-rows: repeat(1, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+            "heading1 heading2"
+            "colorme images2"
 
 
-.contact{
-    display:grid;
-   column-gap: 100px;
-   
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-areas:
-    
-    "contactform map1"
-}
-.infor{
-    grid-area:contactform;
-   
+    }
 
-}
-.map{
-    grid-area:map1;
-    margin-top:20px;
-    
- 
-}
-.map iframe{
-    height:720px
-}
-.map h2{
-    margin-bottom:20px;
-}
+    .heading_first {
+        grid-area: heading1;
+    }
+
+    .heading_second {
+        grid-area: heading2;
+    }
+
+    .color_me {
+        grid-area: colorme;
+    }
+
+    .images {
+        grid-area: images2;
+    }
+
+    /* ________ABOUT____________ */
+    .about_h1 h1 {
+        display: block;
+        color: #C58F00;
+        font-size: 72px;
+        font-weight: 100;
+        margin-top: 200px;
+        margin-bottom: 50px;
+    }
+
+    .abo_img {
+        display: none;
+    }
+
+    .about_aboutus h2:hover {
+        color: #C58F00;
+    }
+
+    .about_aboutus p {
+        line-height: 2rem;
+    }
+
+    .about_aboutus {
+        display: grid;
+        margin:auto;
+        align-items: center;
+        justify-items: center;
+        grid-template-rows: repeat(1, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas:
+            "heado heado heado"
+            "para1 foto1 para2"
+    }
+
+    .about_aboutus h2 {
+        grid-area: heado;
+    }
+
+    .about_aboutus {
+        margin-left: 20px;
+        margin-right: 20px;
+
+    }
+
+    .para1 {
+     
+        color: #C58F00;
+        grid-area: para1;
+        text-align: left;
+    }
+
+    .backu {
+        display: grid;
+        grid-area: foto1;
+        margin-top: 20px;
+    }
+
+    .para2 {
+        color: #C58F00;
+        grid-area: para2;
+        text-align: left;
+    }
+
+
+
+    /* ________CONTACT____________ */
+
+    .bg-img2 {
+        background-size: 100%;
+        height: 550px;
+    }
+
+    .bg-img2 h1 {
+        display: block;
+        text-shadow: 4px 4px 4px #b48395;
+        font-size: 50px;
+        font-weight: 300;
+        color: #0B6C79;
+        margin-top: 200px;
+        padding: 30px;
+    }
+
+
+    .contact {
+        display: grid;
+        column-gap: 100px;
+
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+
+            "contactform map1"
+    }
+
+    .infor {
+        grid-area: contactform;
+
+
+    }
+
+    .map {
+        grid-area: map1;
+        margin-top: 20px;
+
+
+    }
+
+    .map iframe {
+        height: 720px
+    }
+
+    .map h2 {
+        margin-bottom: 20px;
+    }
 }
