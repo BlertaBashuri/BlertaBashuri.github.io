@@ -349,22 +349,20 @@ button:hover {
 .bg-img2 h1 {
     display: none;
 }
-
+/* centering the childs of the Contact on container the input are and the map */
 .contacton div {
     width: 90%;
     margin-right: auto;
     margin-left: auto;
-
-
 }
-
+/* styling the heading2 by giving a colour and font weight and padding for top and bottom */
 .contacton h2 {
     color: #b48395;
     font-weight: 300;
     padding-bottom: 20px;
     padding-top: 30px;
 }
-
+/* Contact area the input text styling with padding and width of 100% displaying them as inline box and using the border box */
 .contacton input[type=text] {
 
     width: 100%;
@@ -375,8 +373,9 @@ button:hover {
     border-radius: 4px;
     box-sizing: border-box;
 }
-
+/* Contact area styling the Submit Button */
 .contacton input[type=submit] {
+    
     width: 100%;
     background-color: #b48395;
     color: white;
@@ -386,7 +385,7 @@ button:hover {
     border-radius: 4px;
     cursor: pointer;
 }
-
+/* Contact area the subject area where you can add your message styling */
 .contacton textarea {
     width: 100%;
     margin: 10px 0;
@@ -397,87 +396,70 @@ button:hover {
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
-
 }
-
+/* styling the button when we hover by changing the background color */
 .contacton input[type=submit]:hover {
     background-color: #26428b;
 }
-
+/* styling the box that contains the input area by giving a border radius and a background color */
 .form2 {
     background-color: #faebe9;
     border-radius: 1rem;
     box-shadow: 5px 5px 10px darkgrey;
     padding: 0.25rem 1.5rem;
-
 }
-
+/* contact area giving the divs of that container the input areas a border radius and padding */
 .infor div {
     border-radius: 5px;
-    padding: 20px;
+    padding: 20px; 
 }
-
+/* Setting a width for the map so it can be responsive when we change the screens */
 .map iframe {
     width: 100%;
     padding-bottom: 30px;
 }
-
+/* styling the footer bakcground color for the contact page */
 .footer2 {
     background-color: #b48395;
     padding: 1rem 0;
-
 }
-
+/* styling the button of the footer by changing the color */
 .button2 {
     color: #b48395;
 }
-
+/* styling the hover of the button by changing the background color */
 .button2:hover {
     background-color: #26428b;
     color: white;
 }
-
+/*-------------------------- Tablet Version -------------------------- */
 @media (min-width:700px) {
 
-
+/* Home Page h1 h2 h3 p font size and font change optimized for tablet version */
     h1 {
         font-size: 40px;
         font-weight: lighter;
-
-
     }
-
     h2 {
         font-size: 32px;
         font-weight: 500;
-
     }
-
     h3 {
         font-size: 24px;
         font-weight: normal;
-
-
     }
-
     p {
         font-size: 18px;
         font-weight: lighter;
         line-height: 1.7rem;
     }
-
+/* setting a height for the background banner image of 460px */
     .bg-img {
         background-size: 100%;
         height: 460px;
         padding-top: 20px;
     }
-
-    .navigation a:hover {
-        background-color: white;
-        color: purple;
-        text-shadow: none;
-    }
-
+    /* Navigation styling for tablet version from display block to flex*/
     .navigation {
         display: flex;
         align-items: center;
@@ -486,9 +468,8 @@ button:hover {
         border-radius: 100px;
         height: 50px;
         margin: 10px 10px;
-
     }
-
+/* changing the order of the navigation list to put the logo in the middle */
     .navigation div:nth-child(1) {
         order: 4;
     }
@@ -508,27 +489,24 @@ button:hover {
     .navigation div:nth-child(5) {
         order: 6;
     }
-
-    .gradient {
-        font-size: 50px;
-        font-weight: bolder;
-        background: -webkit-linear-gradient(#02aab0, #ef629f);
-        background-clip: border-box;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-
+/* changing the color of the navigation list when we hover */
+.navigation a:hover {
+    background-color: white;
+    color: purple;
+    text-shadow: none;
+}
+/* changing the background of the Welcome section and the font color */
     .welcome {
         margin-top: 30px;
         margin-bottom: 20px;
         background-image: url("../images/welcome.jpeg");
         color: white;
     }
-
+/* changing the color of the overlay from a light yellow to a dark light black */
     .overlay {
         background-color: rgba(12, 9, 16, 0.7);
     }
-
+/* changing the image of the about us section */
     .about_us {
         background-image: url("../images/icecream-loadedindulgences.png");
         background-repeat: no-repeat;
@@ -1002,8 +980,8 @@ button:hover {
     }
 
     .about_aboutus {
-        margin-left: 20px;
-        margin-right: 20px;
+        max-width:1300px;
+        margin:0 auto;
 
     }
 
