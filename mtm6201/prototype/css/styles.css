@@ -1,33 +1,40 @@
 * {
     box-sizing: border-box;
 }
+
 /* Family font of the entire website */
 body {
     font-family: 'Montserrat', sans-serif;
     background-color: #f7f7ff;
 }
-/* ---------------------HOME/Mobile Version--------------------- */
+
+/* -----------------------------------------Mobile Version----------------------------------------- */
+/* -----------------------------------------Home Page----------------------------------------- */
 /* heading1 font size and font weight for mobile */
 h1 {
     font-size: 56px;
     font-weight: lighter;
 }
+
 /* heading2 font size and font weight for mobile */
 h2 {
     font-size: 2rem;
     font-weight: 500;
 }
+
 /* heading3 font size and font weight for mobile */
 h3 {
     font-size: 1.3rem;
     font-weight: normal;
 }
+
 /* paragraph font size, font weight and space between the lines (line-height) for mobile */
 p {
     font-size: 16px;
     font-weight: lighter;
     line-height: 1.4rem;
 }
+
 /* aligning in the center with paddings top and bottom for each tag h1, h2, h3, p */
 h1,
 h2,
@@ -40,15 +47,18 @@ p {
     padding-top: 10px;
 
 }
+
 /* Logo of the website setting a width of 100px and a top margin */
 .logo1 {
     width: 100px;
     margin-top: 10px;
 }
+
 /* Hidding the Heading 4 that is located in the center of the banner image to be displayed in Desktop Version */
 .bg-img h4 {
     display: none;
 }
+
 /* Fixed little image on the right side of the website which in desktop version has an animation */
 .icecream img {
     position: fixed;
@@ -57,6 +67,7 @@ p {
     right: 20px;
     transform: scaleX(-1);
 }
+
 /* Banner Image used with background url no repeating with text aligned in the center and with a size of 100% */
 .bg-img {
     background: url('../images/bg-image.jpeg');
@@ -65,27 +76,7 @@ p {
     text-align: center;
     background-size: 100%;
 }
-/* adding animation to the logo any time we hover */
-.logo1:hover {
-    animation-name: logo;
-    animation-duration: 3s;
-    animation-timing-function: ease-in-out;
-}
-/* Logo animation Keyframes */
-@keyframes logo {
 
-    10% {
-        transform: rotate(40deg) scale(2);
-    }
-
-    25% {
-        transform: rotate(-90deg);
-    }
-
-    50% {
-        transform: rotate(360deg);
-    }
-}
 /* setting the Navigation elements (a) for Mobile version by displaying it as block, taking out the text decoration in this case the underline, giving a paddin, color, drop shadow and bold*/
 .navigation a {
     display: block;
@@ -96,6 +87,7 @@ p {
     text-shadow: 2px 2px 4px white;
     padding: 10px;
 }
+
 /* Display of the Navigation Elements when we hover. A background of specific color everytime we hover , color of text change when hover also added opacity to the background and text */
 .navigation a:hover {
     background-color: rgb(11, 108, 121);
@@ -103,21 +95,24 @@ p {
     color: white;
     text-shadow: none;
 }
+
 /* Welcome section added a url background image and a bottom margin without repetition and a size of a cover background*/
 .welcome {
     margin-bottom: 10px;
     background: url('../images/icecream-2.jpeg');
-background-repeat: no-repeat;
+    background-repeat: no-repeat;
     height: auto;
     background-size: cover;
     padding: 30px 0 30px 0;
 }
+
 /* a class of overlay which is located on top of the welcome background image so the text will be more visible */
 .overlay {
     background-color: rgba(248, 247, 216, 0.7);
     padding-top: 20px;
     padding-bottom: 10px;
 }
+
 /* About Us Section is added a url background image with a heading and text on top with no repetition of the backgrounf and a size of 100%*/
 .about_us {
     background-image: url("../images/ice-cream-3.jpeg");
@@ -127,26 +122,31 @@ background-repeat: no-repeat;
     padding: 30px 0 30px 0;
     margin-bottom: 1rem;
 }
+
 /* container of the Color me And Gallery with auto margins and a width of 90% */
 .container1 {
     width: 90%;
     margin: auto;
 
-} 
+}
+
 /* The container of the images Gallery added a bottom margin of 15 px */
 .gallery {
     margin-bottom: 15px;
 }
+
 /* The color me class targeting the images of that container by giving a width of 100% and a padding bottom for each of them*/
 .color_me img {
     width: 100%;
     padding-bottom: 10px;
 }
+
 /* Adding an animation to the Color ME heading by changing instantly the colours */
 .heading_first {
     font-weight: 600;
     animation: color2 6s infinite ease-in-out;
 }
+
 @keyframes color2 {
 
     0% {
@@ -169,40 +169,48 @@ background-repeat: no-repeat;
         color: #D991BA;
     }
 }
+
 /* The Galery class targeting the images of that container by giving a width of 100% and a padding bottom for each of them*/
 .gallery img {
     width: 100%;
     padding-bottom: 10px;
 }
+
 /* Adding a background color and making a width of 100% */
 .menu {
     background-color: rgb(255, 165, 165, 0.2);
     background-size: 100%;
 }
+
 /* Giving a padding to the paragraphs of MENU Section to the HomePage */
 .menu p {
     padding-bottom: 50px;
 }
+
 /* Styling with a background color the footer , Giving a top and bottom padding to it */
 footer {
     background-color: #0B6C79;
     padding: 15px 0;
 
 }
+
 /* Styling the paragraph of the footer */
 .container p {
     color: white;
 }
+
 /* Taking out the underline style of the email adress and putting a heavier font weight */
 .email {
     text-decoration: none;
     color: white;
     font-weight: 300;
 }
+
 /* reducing the width of the social media images */
 .social-links img {
     width: 30%;
 }
+
 /* Flex Display to the Social media container with the images inside and a justify of spacing around and aligning the container in the center */
 .social-links {
     display: flex;
@@ -211,6 +219,7 @@ footer {
     text-align: center;
     margin-left: 30px;
 }
+
 /* styling the search area container together with the button a flex display and a centering it by using justify content */
 .search-area {
     display: flex;
@@ -220,6 +229,7 @@ footer {
     margin-top: 20px;
     margin-left: 30px;
 }
+
 /* styling the search box by taking out the border and giving a border radius and margin right */
 .search {
     margin-right: 5px;
@@ -227,10 +237,12 @@ footer {
     border: none;
     border-radius: 10px;
 }
+
 /* giving a padding to the ice cream icon to the button in the search button in the footer section */
 .fa-ice-cream {
     padding: 0 10px;
 }
+
 /* Styling the button in general not specifically by giving a color of a background and a colour to the icon that is on top of the button */
 button {
     border: none;
@@ -238,13 +250,15 @@ button {
     background-color: white;
     color: #0B6C79;
 }
+
 /* styling the button when we hover */
 button:hover {
     background-color: #FFA5A5;
     color: white;
 }
 
-/* -------------About US -----------*/
+/* -----------------------------------------Desktop Version----------------------------------------- */
+/* -----------------------------------------About----------------------------------------- */
 /* Changing the color of the Navigation list text */
 .navigation3 a {
     display: block;
@@ -255,6 +269,7 @@ button:hover {
     text-shadow: 1px 1px 2px white;
     padding: 0.5rem;
 }
+
 /* Changing the color of the Navigation list text and background when we hover */
 .navigation3 a:hover {
     background-color: white;
@@ -262,6 +277,7 @@ button:hover {
     color: #a0d6b4;
     text-shadow: none;
 }
+
 /* changing the background Image by using the background image url  */
 .bg-img3 {
     background: url('../images/bg2.jpeg');
@@ -272,10 +288,12 @@ button:hover {
     background-size: 100%;
     height: 290px;
 }
+
 /* Hiding the heading1 of the background image on top down the navigation list */
 .bg-img3 h1 {
     display: none;
 }
+
 /* styling the Heading 2 of the About Us page */
 .about_aboutus h2 {
     margin-top: 30px;
@@ -283,19 +301,23 @@ button:hover {
     font-weight: 200;
     font-size: 2.5rem;
 }
+
 /* not displaying the image that will replace the other image on desktop version */
 .backu {
     display: none;
 }
+
 /* Styling the image that will be shown in the mobile version */
 .abo_img1 {
     width: 100%;
     padding-bottom: 20px;
 }
+
 /* hiding the 4 images that will be shown on the tablet version */
 .abo_img {
     display: none;
 }
+
 /* changin the colour of the footer to match with the navigation list */
 .footer3 {
     background-color: #C58F00;
@@ -303,21 +325,36 @@ button:hover {
     margin-top: 20px;
 
 }
+
 /* Setting a line height for the paragraph of the About Us section */
 .about_aboutus p {
     line-height: 1.7rem;
 }
+
 /* styling by changing the button colour */
 .button3 {
     color: #C58F00;
 }
+
 /* styling the button of the search area in the footer when we hover */
 .button3:hover {
     background-color: #a0d6b4;
     color: white;
 }
 
-/* _______CONTACT US_____________ */
+/* changing the color of the search area */
+#search3 {
+    border: solid 2px white;
+    background-color: #C58F00;
+}
+
+/* changing the color of the text in the place holder area in the search */
+#search3::placeholder {
+    color: white;
+}
+
+/* -----------------------------------------Desktop Version----------------------------------------- */
+/* -----------------------------------------Contact----------------------------------------- */
 /* changing the colour of the navigation list for the About Us page */
 .navigation2 a {
     display: block;
@@ -328,6 +365,7 @@ button:hover {
     text-shadow: 2px 2px 4px white;
     padding: 0.5rem;
 }
+
 /* styling the background colour and the text coulour of the button when we hover  */
 .navigation2 a:hover {
     background-color: #b48395;
@@ -335,6 +373,7 @@ button:hover {
     color: white;
     text-shadow: none;
 }
+
 /*  changing the background Image by using the background image url */
 .bg-img2 {
     background: url('../images/bg-2.jpeg');
@@ -345,16 +384,19 @@ button:hover {
     background-size: 100%;
     height: 290px;
 }
+
 /* Hiding the heading1 of the background image on top down the navigation list*/
 .bg-img2 h1 {
     display: none;
 }
+
 /* centering the childs of the Contact on container the input are and the map */
 .contacton div {
     width: 90%;
     margin-right: auto;
     margin-left: auto;
 }
+
 /* styling the heading2 by giving a colour and font weight and padding for top and bottom */
 .contacton h2 {
     color: #b48395;
@@ -362,6 +404,7 @@ button:hover {
     padding-bottom: 20px;
     padding-top: 30px;
 }
+
 /* Contact area the input text styling with padding and width of 100% displaying them as inline box and using the border box */
 .contacton input[type=text] {
 
@@ -373,9 +416,10 @@ button:hover {
     border-radius: 4px;
     box-sizing: border-box;
 }
+
 /* Contact area styling the Submit Button */
 .contacton input[type=submit] {
-    
+
     width: 100%;
     background-color: #b48395;
     color: white;
@@ -385,6 +429,7 @@ button:hover {
     border-radius: 4px;
     cursor: pointer;
 }
+
 /* Contact area the subject area where you can add your message styling */
 .contacton textarea {
     width: 100%;
@@ -397,10 +442,12 @@ button:hover {
     border-radius: 4px;
     box-sizing: border-box;
 }
+
 /* styling the button when we hover by changing the background color */
 .contacton input[type=submit]:hover {
     background-color: #26428b;
 }
+
 /* styling the box that contains the input area by giving a border radius and a background color */
 .form2 {
     background-color: #faebe9;
@@ -408,57 +455,78 @@ button:hover {
     box-shadow: 5px 5px 10px darkgrey;
     padding: 0.25rem 1.5rem;
 }
+
 /* contact area giving the divs of that container the input areas a border radius and padding */
 .infor div {
     border-radius: 5px;
-    padding: 20px; 
+    padding: 20px;
 }
+
 /* Setting a width for the map so it can be responsive when we change the screens */
 .map iframe {
     width: 100%;
     padding-bottom: 30px;
 }
+
 /* styling the footer bakcground color for the contact page */
 .footer2 {
     background-color: #b48395;
     padding: 1rem 0;
 }
+
 /* styling the button of the footer by changing the color */
 .button2 {
     color: #b48395;
 }
+
 /* styling the hover of the button by changing the background color */
 .button2:hover {
     background-color: #26428b;
     color: white;
 }
-/*-------------------------- Tablet Version -------------------------- */
+
+#search2 {
+    border: solid 2px white;
+    background-color: #b48395;
+}
+
+#search2::placeholder {
+    color: white;
+}
+
+/* -----------------------------------------Tablet Version----------------------------------------- */
+/* -----------------------------------------Home Page----------------------------------------- */
 @media (min-width:700px) {
 
-/* Home Page h1 h2 h3 p font size and font change optimized for tablet version */
+    /* Home Page h1 h2 h3 p font size and font change optimized for tablet version */
     h1 {
         font-size: 40px;
         font-weight: lighter;
     }
+
     h2 {
         font-size: 32px;
         font-weight: 500;
     }
+
     h3 {
         font-size: 24px;
         font-weight: normal;
     }
+
     p {
         font-size: 18px;
         font-weight: lighter;
         line-height: 1.7rem;
     }
-/* setting a height for the background banner image of 460px */
+
+    /* setting a height for the background banner image of 460px */
     .bg-img {
         background-size: 100%;
         height: 460px;
         padding-top: 20px;
     }
+
     /* Navigation styling for tablet version from display block to flex*/
     .navigation {
         display: flex;
@@ -469,7 +537,8 @@ button:hover {
         height: 50px;
         margin: 10px 10px;
     }
-/* changing the order of the navigation list to put the logo in the middle */
+
+    /* changing the order of the navigation list to put the logo in the middle */
     .navigation div:nth-child(1) {
         order: 4;
     }
@@ -489,24 +558,28 @@ button:hover {
     .navigation div:nth-child(5) {
         order: 6;
     }
-/* changing the color of the navigation list when we hover */
-.navigation a:hover {
-    background-color: white;
-    color: purple;
-    text-shadow: none;
-}
-/* changing the background of the Welcome section and the font color */
+
+    /* changing the color of the navigation list when we hover */
+    .navigation a:hover {
+        background-color: white;
+        color: purple;
+        text-shadow: none;
+    }
+
+    /* changing the background of the Welcome section and the font color */
     .welcome {
         margin-top: 30px;
         margin-bottom: 20px;
         background-image: url("../images/welcome.jpeg");
         color: white;
     }
-/* changing the color of the overlay from a light yellow to a dark light black */
+
+    /* changing the color of the overlay from a light yellow to a dark light black */
     .overlay {
         background-color: rgba(12, 9, 16, 0.7);
     }
-/* changing the image of the about us section */
+
+    /* changing the image of the about us section */
     .about_us {
         background-image: url("../images/icecream-loadedindulgences.png");
         background-repeat: no-repeat;
@@ -517,12 +590,12 @@ button:hover {
         color: white;
     }
 
+    /* styling with a color the overlay of the about us section */
     .overlay2 {
         background-color: rgba(133, 173, 219, 0.7);
-
-
     }
 
+    /* Images of the gallery section displayed as grid by adding two rows and two colums */
     .gallery {
         display: grid;
         column-gap: 30px;
@@ -531,7 +604,6 @@ button:hover {
         grid-template-areas:
             "pic1 pic2"
             "pic3 pic4";
-
     }
 
     .gallery div:nth-child(1) {
@@ -550,6 +622,7 @@ button:hover {
         grid-area: pic4;
     }
 
+    /* Images of the color me section displayed as grid by adding two rows and two colums */
     .color_me {
 
         display: grid;
@@ -585,67 +658,71 @@ button:hover {
         margin-bottom: 25px;
     }
 
+    /* giving a margin top and bottom to the heading 2 of the Color me Section */
     .container1 h2 {
         margin-top: 10px;
         margin-bottom: 10px;
-
     }
 
+    /* giving a margin top and bottom to the heading 2 of the Gallery Section */
     .images h2 {
         margin-top: 10px;
         margin-bottom: 10px;
-
     }
 
+    /* setting a margin top for the footer */
     footer {
         margin-top: 30px;
     }
 
+    /* styling the search area by changing the backgroun-color and giving a border */
     .search {
         border: solid 2px white;
         background-color: #0B6C79;
-
     }
 
+    /* changin the color of the text inside the sear area */
     .search::placeholder {
         color: white;
     }
 
+    /* Displaying as flex the elements of the footer the search area and the social media images */
     .fo {
         display: flex;
         justify-content: space-between;
         margin-left: 20px;
         margin-right: 20px;
-
-
     }
 
+    /* setting a width of 30% to the social links images */
     .social-links {
-        margin-top: auto;
-        margin-bottom: auto;
+        margin: auto 0;
         width: 30%;
     }
 
-    /* ------------ABOUT US-------------------------- */
-
+    /* -----------------------------------------Tablet Version----------------------------------------- */
+    /* -----------------------------------------About Page----------------------------------------- */
+    /* giving a height to the background of the banner image in the About Us Page */
     .bg-img3 {
         background-size: 100%;
         height: 460px;
         padding-top: 20px;
     }
 
+    /* changing the color of the hover in the navigation list */
     .navigation3 a:hover {
         background-color: white;
         color: #26428b;
         text-shadow: none;
     }
 
+    /* changint the color of the list in the navigation container */
     .navigation3 a {
         color: #C58F00;
     }
 
+    /* giving the same styles as in the desktop version for the home page but in this case we changed the name of the class in the about page */
     .navigation3 {
-
         display: flex;
         align-items: center;
         justify-content: space-around;
@@ -653,7 +730,6 @@ button:hover {
         border-radius: 100px;
         height: 50px;
         margin: 10px 10px;
-
     }
 
     .navigation3 div:nth-child(1) {
@@ -682,6 +758,7 @@ button:hover {
         text-shadow: none;
     }
 
+    /* styling the heading 2 of the about us page */
     .about_aboutus h2 {
         margin-top: 30px;
         margin-bottom: 20px;
@@ -689,22 +766,24 @@ button:hover {
         font-size: 3.5rem;
     }
 
+    /* giving a width of 100% to the images for about us page */
     .about_aboutus img {
         width: 100%;
         height: auto;
         padding: 0 20px 20px 20px;
-
-
     }
 
+    /* increasing the line height for the paragraph in the about us area in About us page */
     .about_aboutus p {
-        line-height: 1.9rem;
+        line-height: 32px;
     }
 
+    /* Making not to display the image in the mobile version on the teblet version */
     .abo_img1 {
         display: none;
     }
 
+    /* Displaying the images for the tablet version by using grid */
     .abo_img {
         row-gap: 15px;
         width: 100%;
@@ -735,32 +814,29 @@ button:hover {
         grid-area: aku4;
     }
 
-    #search3 {
-        border: solid 2px white;
-        background-color: #C58F00;
-
-    }
-
-    /* ------------- CONTACT US-------------------*/
-
+    /* -----------------------------------------Tablet Version----------------------------------------- */
+    /* -----------------------------------------Contact Page----------------------------------------- */
+    /* setting a heightfor the banner of the background image in the contact us page for tablet Version*/
     .bg-img2 {
         background-size: 100%;
         height: 460px;
         padding-top: 20px;
     }
 
+    /* changing the color of the navigation when we hover */
     .navigation2 a:hover {
         background-color: white;
         color: #26428b;
         text-shadow: none;
     }
 
+    /* changing the color of the navigation list */
     .navigation2 a {
         color: #b48395;
     }
 
+    /* displaying flex the navigation list the code is the same just the class changed for the Contact Us Page */
     .navigation2 {
-
         display: flex;
         align-items: center;
         justify-content: space-around;
@@ -768,7 +844,6 @@ button:hover {
         border-radius: 100px;
         height: 50px;
         margin: 10px 10px;
-
     }
 
     .navigation2 div:nth-child(1) {
@@ -791,37 +866,27 @@ button:hover {
         order: 6;
     }
 
-    #search2 {
-        border: solid 2px white;
-        background-color: #b48395;
-    }
+
 }
 
+/* -----------------------------------------Desktop Version----------------------------------------- */
+/* -----------------------------------------Home Page----------------------------------------- */
 @media (min-width:1280px) {
-    .container {
-        width: 1280px;
-        margin-left: auto;
-        margin-right: auto;
-    }
 
+    /* Increasing the font size and the font weight for h1, h2, h3, p for the Home page */
     h1 {
         font-size: 48px;
         font-weight: lighter;
-
-
     }
 
     h2 {
         font-size: 36px;
         font-weight: 500;
-
     }
 
     h3 {
         font-size: 28px;
         font-weight: normal;
-
-
     }
 
     p {
@@ -830,11 +895,13 @@ button:hover {
         line-height: 2.3rem;
     }
 
+    /* Increasing the height of the banner of the background in the Home page */
     .bg-img {
         background-size: 100%;
         height: 550px;
     }
 
+    /* making appear the text on top of the image in the banner of the background image */
     .bg-img h4 {
         display: block;
         font-size: 50px;
@@ -844,18 +911,39 @@ button:hover {
         padding: 30px;
     }
 
+    /* adding animation to the logo any time we hover */
+    .logo1 {
+        animation: logo 3s infinite ease-in-out;
+    }
+
+    /* Logo animation Keyframes */
+    @keyframes logo {
+
+        10% {
+            transform: rotate(40deg) scale(2);
+        }
+
+        25% {
+            transform: rotate(-90deg);
+        }
+
+        50% {
+            transform: rotate(360deg);
+        }
+    }
+
+    /* Applying animation to the h4 text on top of the banner when we hover it changes colours */
     .bg-img h4:hover {
         animation: color1 3s infinite ease-in-out;
-
     }
 
     @keyframes color1 {
         0% {
-            color: red;
+            color: #E9190F;
         }
 
-        0% {
-            color: white;
+        20% {
+            color: #669447;
         }
 
         50% {
@@ -863,26 +951,25 @@ button:hover {
         }
 
         70% {
-            color: yellow;
+            color: #FFAE03;
         }
 
         100% {
-            color: pink;
+            color: #FF0F80;
         }
-
     }
 
+    /* giving the ice cream image on the left side a width and a scale */
     .icecream img {
         position: fixed;
         width: 3%;
         bottom: 20px;
         right: 20px;
         transform: scaleX(-1);
-
     }
 
+    /* styling with animation the ice cream image on the left side for desktop version on Home page */
     .icecream img:hover {
-
         animation-name: img1;
         animation-duration: 3s;
         animation-timing-function: ease-in-out;
@@ -903,16 +990,17 @@ button:hover {
         }
     }
 
+    /* giving a right padding to the search area in the footer of the Home page for desktop version */
     .search {
         padding-right: 120px;
-
-
     }
 
+    /* displayin as a flex the info on the Welcome area in the Home page */
     .info {
         display: flex;
     }
 
+    /* styling with a display grid the Gallery images and the Color me Images on the Home Page for Desktop Version */
     .container1 {
         display: grid;
         column-gap: 100px;
@@ -921,8 +1009,6 @@ button:hover {
         grid-template-areas:
             "heading1 heading2"
             "colorme images2"
-
-
     }
 
     .heading_first {
@@ -941,7 +1027,9 @@ button:hover {
         grid-area: images2;
     }
 
-    /* ________ABOUT____________ */
+    /* -----------------------------------------Desktop Version----------------------------------------- */
+    /* -----------------------------------------About Page----------------------------------------- */
+    /* making visibile by displayn block the Heading one and styling it with a color font weigh and font size */
     .about_h1 h1 {
         display: block;
         color: #C58F00;
@@ -951,21 +1039,31 @@ button:hover {
         margin-bottom: 50px;
     }
 
+    /* making not to be displayed the image that was being displayed in the mobile version */
     .abo_img {
         display: none;
     }
 
+    /* giving a style when hover the heading 2 by changing the color */
     .about_aboutus h2:hover {
         color: #C58F00;
     }
 
+    /* increasing the line height of the paragraph for desktop version */
     .about_aboutus p {
-        line-height: 2rem;
+        line-height: 32px;
     }
 
+    /* giving a max-width to the container of the paragraph and the image */
+    .about_aboutus {
+        max-width: 1300px;
+        margin: 0 auto;
+    }
+
+    /* displaying the paragraphs and the image with grid paragraph image paragraph for Desktop */
     .about_aboutus {
         display: grid;
-        margin:auto;
+        margin: auto;
         align-items: center;
         justify-items: center;
         grid-template-rows: repeat(1, 1fr);
@@ -979,25 +1077,21 @@ button:hover {
         grid-area: heado;
     }
 
-    .about_aboutus {
-        max-width:1300px;
-        margin:0 auto;
-
-    }
-
+    /* giving a color to the first paragraph and aligning it to the left */
     .para1 {
-     
         color: #C58F00;
         grid-area: para1;
         text-align: left;
     }
 
+    /* displaying the image and giving it a margin of 20px */
     .backu {
         display: grid;
         grid-area: foto1;
         margin-top: 20px;
     }
 
+    /* giving a color to the first paragraph and aligning it to the left */
     .para2 {
         color: #C58F00;
         grid-area: para2;
@@ -1006,13 +1100,15 @@ button:hover {
 
 
 
-    /* ________CONTACT____________ */
-
+    /* -----------------------------------------Desktop Version----------------------------------------- */
+    /* -----------------------------------------Contact Page----------------------------------------- */
+    /* Giving the image of the banner in the background a width of 100% and a height  */
     .bg-img2 {
         background-size: 100%;
         height: 550px;
     }
 
+    /* Displaying the Heading 1 as a block and styling it with text shadow and color */
     .bg-img2 h1 {
         display: block;
         text-shadow: 4px 4px 4px #b48395;
@@ -1023,34 +1119,30 @@ button:hover {
         padding: 30px;
     }
 
-
+    /* Displaying as a grid the with 2 columnd the input area and the map */
     .contact {
         display: grid;
         column-gap: 100px;
-
         grid-template-columns: repeat(2, 1fr);
         grid-template-areas:
-
             "contactform map1"
     }
 
     .infor {
         grid-area: contactform;
-
-
     }
 
     .map {
         grid-area: map1;
         margin-top: 20px;
-
-
     }
 
+    /* giving the map a specific height */
     .map iframe {
         height: 720px
     }
 
+    /* styling with a margin top the Heading 2 */
     .map h2 {
         margin-bottom: 20px;
     }
