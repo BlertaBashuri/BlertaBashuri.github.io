@@ -257,7 +257,7 @@ button:hover {
     color: white;
 }
 
-/* -----------------------------------------Desktop Version----------------------------------------- */
+/* -----------------------------------------Mobile Version----------------------------------------- */
 /* -----------------------------------------About----------------------------------------- */
 /* Changing the color of the Navigation list text */
 .navigation3 a {
@@ -300,6 +300,7 @@ button:hover {
     margin-bottom: 20px;
     font-weight: 200;
     font-size: 2.5rem;
+    color: #C58F00;
 }
 
 /* not displaying the image that will replace the other image on desktop version */
@@ -353,14 +354,14 @@ button:hover {
     color: white;
 }
 
-/* -----------------------------------------Desktop Version----------------------------------------- */
+/* -----------------------------------------Mobile Version----------------------------------------- */
 /* -----------------------------------------Contact----------------------------------------- */
 /* changing the colour of the navigation list for the About Us page */
 .navigation2 a {
     display: block;
     margin-top: 5px;
     text-decoration: none;
-    color: #0B6C79;
+    color: #26428b;
     font-weight: bold;
     text-shadow: 2px 2px 4px white;
     padding: 0.5rem;
