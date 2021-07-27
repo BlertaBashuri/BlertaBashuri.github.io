@@ -62,7 +62,7 @@ img{
 }
 /* header image display as a block so we can put the blockquote on top */
 .image-container {
-        background: url('../images/Bashuri_B_portfolio.jpg');
+        background: url('../images/bashuri_B_portfolio.jpg');
         background-repeat: no-repeat;
         width: 100%;
         display: block;
