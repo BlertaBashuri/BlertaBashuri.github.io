@@ -161,6 +161,13 @@ margin-right:2rem;
     background-size: 100%;
     height: 290px;
 }
+.about-content{
+    text-align: center;
+    margin-left:2rem;
+    margin-right:2rem;
+    margin-bottom:4rem;
+    margin-top:4rem;
+}
 
 
 /* ----------------------------------Tablet VERSION----------------------------------*/
