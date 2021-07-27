@@ -1,3 +1,248 @@
+* {
+    box-sizing: border-box;
+}
+/* ----------------------------------MOBILE VERSION----------------------------------*/
+/* ----------------------------------Home Page----------------------------------*/
 body{
     font-family:'Montserrat';
+}
+h1{
+    margin-top: 2rem;
+    font-size: 3rem;
+    font-weight:300;
+}
+h2{
+    margin-top: 2rem;
+    font-weight: 200;
+    font-size:1.5rem;
+}
+p{
+    margin-top: 2rem;
+    font-weight: lighter;
+    font-size:1rem;
+    line-height: 1.5rem;
+}
+/* setting a background for the Navigation list */
+.navigation{
+    background-color: #000000;
+}
+/* styling the navigation list by taking the underline from the navigation list, giving a color displaying it as a block and giving a padding on top and in the bottom to create sapce */
+.navigation a{
+    text-decoration: none;
+    display:block;
+    width:100%;
+    text-align: center;
+    padding-top:1rem;
+    padding-bottom:1rem;
+    color:#FFFFFF;
+}
+/* Giving a background color to the navigation list everytime we hover */
+.navigation a:hover {
+    background-color: #FFFFFF;
+    color:#000000;
+}
+/* excluding the fifth child of the navigation list from hovering */
+.navigation a:nth-child(5){
+    background-color: #000000;
+}
+/* giving the images a max width of 100% */
+img{
+    max-width:100%;
+}
+
+/* setting a width of 80% to the second container and aligning them in the center/ Aligning also the text to be centered */
+.second-container{
+    width:90%;
+    margin:auto;
+    text-align: center;
+}
+/* Adding a padding in the bottom of the welcome paragraph */
+.second-container div:nth-child(1){
+    padding-bottom:2rem;
+}
+/* header image postion relative so we can put the blockquote on top */
+.image-container {
+   
+        background: url('../images/bg-img.jpeg');
+        background-repeat: no-repeat;
+        width: 100%;
+        display: block;
+        text-align: center;
+        background-size: 100%;
+        height: 290px;
+    }
+  /* Centering the blockquote and putting it on top of the header image */
+  blockquote{
+    display: block;
+    width:90%;
+    margin:auto;
+    text-align: center;
+  padding-top:5rem;
+  padding-bottom:5rem;
+}
+   .center div{
+    background-color: rgba(0, 0, 0, 0.7);
+    color:#FFFFFF;
+    padding:1rem;
+   
+    
+   }  
+      /* setting a margin on top and bottom for each "buy" div part of the class second-container */
+  .buy{
+      margin-top:2rem;
+      margin-bottom:2rem;
+  }
+  /* Setting a padding to the bootstrap btn class */
+  .btn{
+      padding-left:3rem;
+      padding-right:3rem;
+  }
+  /* Footer Area */
+  /* Giving a margin top so it will be devided from the other part of the body */
+  footer{
+      margin-top:4rem;
+  }
+  /* giving the second navigation two links a display flex */
+  .second-navigation{
+     display:flex;
+justify-content:center;
+  }
+  /* taking out the underline from the navigation list and giving a black color */
+  .second-navigation a{
+      text-decoration: none;
+    color:#000000;
+    padding:1rem;
+    border-radius: 1rem;
+}
+.second-navigation a:hover {
+    background-color:#000000;
+    color:#FFFFFF;
+    
+}
+/* giving space in between the navigations links */
+.second-navigation a:nth-child(1){
+margin-right:2rem;
+}
+/* displaying as a flex the social media links  */
+.social-links{
+    display: flex;
+    margin-top: 4rem;
+    justify-content: space-around;
+    text-align: center;
+    margin-left:1rem;
+    margin-right:1rem;
+}
+/* reducing the size of the social links images */
+.social-links img{
+  width:30%;
+}
+/* aligning the text of the footer in the center */
+.footer-elements{
+    text-align: center;
+}
+#footer{
+    border-top:1px solid #000000;
+}
+/* Aligning the copyright paragraph in the center */
+.copyright1{
+    text-align: center;
+    margin-top:3rem;
+    margin-bottom:3rem;
+}
+/* ----------------------------------Tablet VERSION----------------------------------*/
+/* ----------------------------------Home Page----------------------------------*/
+@media (min-width:700px) {
+/* Display the top navigation as flex */
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #FFFFFF;
+    color:#000000;
+ 
+}
+/* Changing the colour of the navigation elements and giving a padding */
+.navigation a{
+    color:black;
+   padding-left: 20px;
+   padding-right:20px;
+}
+/*Giving a style of a solid box border when we hover on the navigation */
+.navigation a:hover {
+    border: 1px solid #000000;
+    border-radius:.5rem;
+}
+/* aligining the paragraph pf contact list to the start*/
+.footer-elements p{
+    text-align: start;
+    
+}
+/* Applying grid to the footer elements */
+.footer-elements{
+   margin-left:5rem;
+   margin-right:5rem;
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+            "info socialmedia"
+           
+}
+
+.contact{
+    grid-area:info;
+}
+.social-links{
+    grid-area:socialmedia;
+    margin-top:4rem;
+}
+/* Reducing the size of the images of the social media area */
+.social-links img{
+    width:20%;
+}
+.second-navigation a:nth-child(1){
+    margin-right:4rem;
+    } 
+    .second-navigation a:hover {
+        border: 1px solid #000000;
+        border-radius:.5rem;
+        background:#FFFFFF;
+        color:#000000;
+    }
+    .social-links img{
+        width:30%;
+      }
+
+}
+/* ----------------------------------Desktop VERSION----------------------------------*/
+/* ----------------------------------Home Page----------------------------------*/
+@media (min-width:1280px) {
+/* Applying display flex to the nacvigation list and using justify content to set it up to the left of the page */
+    .navigation {
+        display: flex;
+          justify-content: left;
+         background-color: #FFFFFF;
+        color:#000000;
+        margin-left:2rem;
+    
+    }
+    /* Creating some space in between the navigation items with a margin right */
+  .navigation a{
+      margin-right:4rem;
+  }
+  /* Taking out the hover of the Logo */
+  .image-logo a:hover{
+    border: 1px solid  #FFFFFF;
+  
+}
+/* Increasing the height of the background image after the navigation list */
+.image-container {
+    height:500px;
+}
+/* Centering the blockquote together with the background with opacity by using the maring top */
+.center div{
+  padding:2rem;
+ margin-top:6rem;
+   } 
+ 
+  
 }
