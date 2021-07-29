@@ -168,8 +168,51 @@ margin-right:2rem;
     margin-bottom:4rem;
     margin-top:4rem;
 }
+.about-content2{
+    display:block;
+}
 
+/* aligning the text of the footer in the center */
+.footer-elements2{
+    text-align: center;
+}
+/* ----------------------------------MOBILE VERSION----------------------------------*/
+/* ----------------------------------Portfolio Page----------------------------------*/
 
+.background{
+    
+    background-color: #000000;
+    padding-left:4rem;
+    padding-right:4rem;
+    
+    padding-bottom: 4rem;
+}
+.background h1, h3, h2{
+    color:#FFFFFF;
+    
+}
+.background h1{
+    padding-top: 2rem;
+    font-size:3rem;
+    font-weight: 300;
+    text-align: center;
+}
+.profile_img{
+    padding-bottom:2rem;
+    padding-top:2rem;
+}
+.photography_img{
+    padding-bottom:2rem;
+    padding-top:2rem;
+}
+.graphic_img{
+    padding-bottom:2rem;
+    padding-top:2rem;
+}
+.paintings_img{
+    padding-bottom:2rem;
+    padding-top:2rem;
+}
 /* ----------------------------------Tablet VERSION----------------------------------*/
 /* ----------------------------------Home Page----------------------------------*/
 
@@ -251,9 +294,48 @@ margin-right:2rem;
     }
    
 
-}
-/* ----------------------------------TABLET VERSION----------------------------------*/
+
+/* ----------------------------------Tablet VERSION----------------------------------*/
 /* ----------------------------------About Page----------------------------------*/
+/* Applying grid to the footer elements */
+.footer-elements2{
+    margin-left:5rem;
+    margin-right:5rem;
+     display:grid;
+     grid-template-columns: repeat(2, 1fr);
+         grid-template-areas:
+             "info socialmedia"          
+ }
+ 
+ .contact{
+     grid-area:info;
+ }
+ .social-links{
+     grid-area:socialmedia;
+     margin-top:5rem;
+ }
+ /* ----------------------------------Tablet VERSION----------------------------------*/
+/* ----------------------------------Portfolio Page----------------------------------*/
+
+/* Making the images of the Portfolio page width of 100% */
+.background img{
+    width: 100%;
+}
+/* styling the page the two sections of Paintings and Graphic using display grid */
+.grid_items{
+    display:grid;
+    column-gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+    "paintings graphic"          
+}
+.bashuri_graphic{
+    grid-area: paintings;
+}
+.bashuri_paintings{
+    grid-area: graphic;
+}
+}
 
 /* ----------------------------------Desktop VERSION----------------------------------*/
 /* ----------------------------------Home Page----------------------------------*/
@@ -331,10 +413,33 @@ margin-right:2rem;
     text-align:center;
  }
 
- 
-/* ----------------------------------TABLET VERSION----------------------------------*/
+/* ----------------------------------DESKTOP VERSION----------------------------------*/
 /* ----------------------------------About Page----------------------------------*/
 .image-container_about{
     height:500px;
+}
+.about-content{
+    margin-left:auto;
+    margin-right:auto;
+}
+.about-content2{
+    display: grid;
+    margin-right:4rem;
+    margin-left:4rem;
+column-gap: 2rem;
+     grid-template-columns: repeat(2, 1fr);
+     grid-template-areas:
+     
+     "paragraph1 paragraph2"
+
+}
+
+.paragraph1{
+    grid-area:paragraph1;
+    text-align: left;
+}
+.paragraph2{
+    grid-area:paragraph2;
+    text-align: left;
 }
 }
