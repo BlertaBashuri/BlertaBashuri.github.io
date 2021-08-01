@@ -4,32 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bashuri Bootstrap</title>
+    <!-- Bootstrap style sheet -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/styles.css">
-     <!-- font awsome icons -->
+  
+     <!-- font awsome icons used for the buttons-->
   <script src="https://kit.fontawesome.com/c45a672bcc.js" crossorigin="anonymous"></script>
 </head>
 <body>
+
    <section id="intro">
+     <!-- container- fluid provides a full-width container / full width of the viewport -->
     <div class="container-fluid">
-<!-- Nav Bar -->
+<!-- Nav Bar navbar-expand-lg=means the navigation bar to be extended /navbar-dark=setting a style to the navigation/p-4=styling the navigation with padding and a bottom margin-mb-->
 <nav class="nav navbar-expand-lg navbar-dark bg-dark p-4 mb-1">
     <!-- Logo display name(brand) -->
-   
+   <!-- navbar-toggler for use with our collapse navigation -->
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"> </span>
+       <!-- The hamburger toggler Menu -->
+      <span class="navbar-toggler-icon"> </span>
     </button>
-
+<!-- collapsing all the components of the navigation by using navbar-collapse -->
 <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-<ul class="navbar-nav ml-">
+  <!-- creating a horizontal menu using the navbar-nav class -->
+<ul class="navbar-nav">
     <li class="nav-item">
-        <a class="nav-link" href="">Home</a>
+<!-- nav-link element link that represents  a link of the navigation -->
+        <a class="nav-link" href="#">Home</a>
     </li>
     <li class="nav-item">
-        <a class="nav-link" href="">Empty-Nav</a>
+        <a class="nav-link" href="#">Empty-Nav</a>
     </li>
     <li class="nav-item">
-        <a class="nav-link" href="">Empty-Nav</a>
+        <a class="nav-link" href="#">Empty-Nav</a>
     </li>
     <!-- Dropdown Menu -->
     <li class="nav-item dropdown">
@@ -46,28 +52,52 @@
 </ul>
 </div>
 
-<a class="navbar-brand px-3" href="">bashuri</a>
+<a class="navbar-brand px-3" href="">bashuri </a>
 
 </nav>
 
 <!-- Title -->
 
-   
+   <!-- giving a color to the text on top of the carousel images -->
       <div class="text-success mb-5 mt-5 text-sm-center text-md-start text-lg-center display-1 ">
-      <h1>This is a Bootstrap Exercise</h1>
+      <h1>Bootstrap This!</h1>
       </div> 
+      <!-- three carousel images with text on top -->
       <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
+          <!-- slide one of the carousel -->
           <div class="carousel-item active">
             <img src="images/boot-1.jpeg" class="h-25 d-block w-100" alt="first-image">
+            <div class="carousel-caption d-none d-sm-block d-md-block d-lg-block">
+              <h5>First Carousel Slide Show</h5>
+              <p>carousel-inner it means that it woruks with a series of images, text. <br>
+                carousel-item it is an individual interval in each interval we use the carousel-item <br>
+                active class should be added in one of the slides to make the carousel visible.
+              </p>
+            </div>
           </div>
+          <!-- slide two of the carousel -->
           <div class="carousel-item">
             <img src="images/boot-2.jpeg" class="h-25 d-block w-100" alt="second-image">
+            <div class="carousel-caption d-none d-sm-block d-md-block d-lg-block">
+              <h5>Second Carousel Slide Show</h5>
+              <p>carousel-caption it is used to add a text to the slides that can be personalized for each slide <br>
+                h-25 is the selected height for the image d-block for dispalying as a block and w-100 the width of a 100%
+              </p>
+            </div>
           </div>
+          <!-- slide three of the carousel -->
           <div class="carousel-item">
             <img src="images/boot-4.png" class="h-25 d-block w-100" alt="thirdimage">
+            <div class="carousel-caption d-none d-sm-block d-md-block d-lg-block">
+              <h5>Third Carousel Slide Show</h5>
+              <p>Carousel can be personalized in different style with text on top or without so only with slide. <br>
+                With controls adding previous and next controls or indicators. <br>
+                With captions like the one that I have used.
+            </div>
           </div>
         </div>
+        <!-- Previous and Next buttons of the Carousel -->
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
@@ -79,7 +109,7 @@
       </div>
       </div>
   </section> 
-   
+   <!-- A container with Header and text -->
    <div class="container ">
      <div class="mt-5 mb-5">
      <h2 class="mb-4 text-lg-center">
@@ -93,31 +123,88 @@ Make the website responsive to different viewports, which means if we are lookin
 
      </p>
     </div>
+    <!-- Outlined button  -->
     <div class="mt-5 mb-5">
       <button type="button" class="btn btn-outline-secondary btn-lg mb-sm-2 mb-md-0 "><i class="fas fa-palette"></i> Im an Outlined Button</button>
      
 </div>
     <hr>
   </div>
+
+  <div class="container mt-5 mb-5 "> 
+    <!-- Card Section  Used Grid-->
+    <h2 class="text-warning">Cards Populated by Legos</h2>
+<div class=" container row gx-4 mb-5">
+<div class="col-sm-12 col-md-6 col-lg-4 mt-4">
+  <!-- First Card with image text and a button explaing what card is and the puropsese-->
+  <div class="card" >
+    <img src="images/lego1.jpeg" class="card-img-top" alt="card-image1">
+    <div class="card-body">
+      <p class="card-text">Card is a container that provides  image, title, text and a button. I have used it is as an example of a price card.Two of the examples are without a header one is with header. Buttons redirect you in different pages of bootstrap the first and second and the last one into the lego shop.
+        Just for example purposes.
+      </p>
+      <a href="https://getbootstrap.com/docs/5.0/components/card/#body" target="_blank" class="btn btn-warning">Bootstrap first</a>
+    </div>
+  </div>
+</div>
+ <!-- Second Card with header image text and a button how to sytle a card-->
+<div class="col-sm-12 col-md-6 col-lg-4 mt-4">
+  <div class="card">
+    <img src="images/lego2.jpeg" class="card-img-top" alt="card-image1">
+    <div class="card-body">
+      <h2 class="card-title">Card title example</h2>
+      <p class="card-text">Class of card can be styled with the standards of HTML tags.
+        A div of card-body which contains the header , pargraph and image
+        Card-title is the class that we use on the cart header. Class Card-text It is used for the paragraphs.</p>
+      <a href="https://getbootstrap.com/docs/5.0/components/card/" target="_blank" class="btn btn-warning">Card Class</a>
+    </div>
+  </div>
+</div>
+<!-- Third Card with image text and a button Example-->
+<div class="col-sm-12 col-md-6 col-lg-4 mt-4">
+  <div class="card" >
+    <img src="images/lego3.jpeg" class="card-img-top" alt="card-image1">
+    <div class="card-body">
+      <p class="card-text">Night has fallen on Gotham City™ and builders everywhere are ready for Batman sets. They can battle against the bad guys with their favorite Dark Knight. Shop awesome LEGO® building toys and brick sets and find the perfect gift for your kid. Buy the latest sets and discover your favorite themes! Discover something for all ages.</p>
+      <a href="https://www.lego.com/en-ca?ef_id=Cj0KCQjw6ZOIBhDdARIsAMf8YyGb-nBBCH_3chH5_lkXmfJOpTg_P5s6cCTp-LdmO-itmG78Ig6cJlcaAgTqEALw_wcB:G:s&s_kwcid=AL!790!3!514191100734!e!!g!!lego.&Buffer&cmp=KAC-INI-GOOGUS-GO-CA-EN-RE-PS-BUY-CREATE-MASTERBRAND-SHOP-BC-EX-RN-LEGO_CORE&gclid=Cj0KCQjw6ZOIBhDdARIsAMf8YyGb-nBBCH_3chH5_lkXmfJOpTg_P5s6cCTp-LdmO-itmG78Ig6cJlcaAgTqEALw_wcB"  target="_blank" class="btn btn-warning">Shop Now</a>
+    </div>
+  </div>
+</div>
+</div>
+
+<hr>
+  </div>
+ <!-- A part of Bootstrap Creativity Section Used Grid-->
   <div class="container">
     <h2 class="mb-4">A part from Bootstrap Creativity</h2>
   <div class="container">
     <div class="row gx-4">
+      <!-- Button Explanation Header Text and Button example -->
   <div class="col-sm-12 col-md-6 col-lg-4 mt-4">
-    <h3 class="text-info "> #Buttons</h3>
+    <!-- text colour -->
+    <h3 class="text-info"> #Buttons</h3>
   
-    <p class=""> I have decided to use two of my favorites buttons; The outline secondary (grey color button, btn-outline-secondary) and the green filled button ussing the class of btn-success. Bootstrap includes several predefined button styles, each serving its own semantic purpose, with a few extras thrown in for more control. </p>
+    <p> I have decided to use two of my favorites buttons; The outline secondary (grey color button, btn-outline-secondary) and the green filled button ussing the class of btn-success. Bootstrap includes several predefined button styles, each serving its own semantic purpose, with a few extras thrown in for more control. </p>
+   <!-- Bootstrap Button -->
     <button type="button" class="btn btn-success btn-lg mt-3 mb-3 "><i class="fas fa-pencil-ruler"></i> Im the Button of Success</button>
   </div>
+  <!-- Section explaining about the Images on Bootstrap -->
   <div class="col-sm-12 col-md-6 col-lg-4 mt-4">
     <h2 class="text-secondary">Images on Bootstrap</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui odio, accusantium maxime commodi nostrum iste iusto laboriosam culpa earum nam ad inventore. Quaerat dolore atque provident rem nisi, quasi reiciendis.</p>
+    <p>There is many ways how we want to dispaly an image! When we need to place an image to our website we need to fit it on width and height. On Bootstrap we create responsive images by adding a class of (img-fluid) so the image will scale with the parent element.
+      If you want to put some radius to the corner of the image just use the class of (img-thumbanil)so our image will have a 1px border radius. 
+      Just in case you are wondering how to move the image to the left, right or in the center except the text-alignment classes there are the float classes:
+      for example: left:floatet-start; right:floatet-end; center: we use the margin auto and the display block:mx-auto d-block;
+   
+    </p>
   </div>
 <div class="container col-sm-12 col-md-12 col-lg-4 mt-4">
-  <h3 class="text-warning">List group </h3>
-<p class="">I think the list of group is very useful to be used especially if you want to redirect in different sections, pages , external links. In this case I have used it to put external links that redirects to different pages of Bootstrap.List groups are a flexible and powerful component for displaying a series of content. Modify and extend them to support just about any content within.</p>
-
-<div class=" container list-group mb-sm-5 mt-2">
+  <!-- Header text colour -->
+  <h3 class="text-danger">List group </h3>
+  <!-- margin top to the paragraph -->
+<p class="mb-4">I think the list of group is very useful to be used especially if you want to redirect in different sections, pages , external or internal links. In this case I have used it to put external links that redirects to different pages of Bootstrap. List groups are a flexible and powerful component for displaying a series of content. Modify and extend them to support just about any content within.</p>
+<!-- List group Container -->
+<div class=" container list-group mb-sm-5 mt-sm-5 mt-md-3 mt-lg-1">
   <a href="https://getbootstrap.com/" target="_blank" class="list-group-item list-group-item-action " aria-current="true">
     Bootstrap Homepage
   </a>
@@ -131,15 +218,16 @@ Make the website responsive to different viewports, which means if we are lookin
 </div>
 
 <div>
+  <!-- Alert Container -->
   <div class=" container alert alert-danger mt-4" role="alert">
    <h2> #Alerts</h2>
-   <p>Bootstrap will not do everything for you, but it provides a set of reasonable defaults to choose from and it will help developers to concentrate more on the development work than worrying about design, and help them to get a good looking website up and running quickly.</p> 
+   <p>Bootstrap will not do everything for you, but it provides a set of reasonable defaults to choose from and it will help developers to concentrate more on the development work than worrying about design, and help them to get a good looking website up and running quickly.
+     I have chosen to use the alert-danger that styles the alert with the red colour. The other class that I have used it is the margin to (mt).
+   </p> 
+ 
   </div>
 </div>
 </div>
-
-
-
     <!-- Java Scrip before the closing tab -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
