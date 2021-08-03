@@ -108,36 +108,49 @@ img{
      display:flex;
 justify-content:center;
   }
+  form{
+      margin-top:2rem;
+      margin-bottom:1rem;
+  }
+  .input{
+      border-radius: .5rem;
+      padding:.5rem;
+      border:1px solid #000000;
+  }
+  .button{
+    border-radius: .4rem;
+    padding:.5rem;
+    border:1px solid #000000;
+    color:#FFFFFF;
+    background-color: #000000;
+  }
   /* taking out the underline from the navigation list and giving a black color */
   .second-navigation a{
       text-decoration: none;
     color:#000000;
     padding:1rem;
-    border-radius: 1rem;
+  
 }
 .second-navigation a:hover {
     background-color:#000000;
     color:#FFFFFF;
     
 }
-/* giving space in between the navigations links */
-.second-navigation a:nth-child(1){
-margin-right:2rem;
-}
+
 /* displaying as a flex the social media links  */
-.social-links{
-    display: flex;
-   justify-content: center;
-   align-items: center;
-    margin-top: 3rem;
+footer .social-links a{
+    font-size: 1.5rem;
+  padding:.2rem 1rem;
+    display: inline-block;
     text-align: center;
-    margin-left:4rem;
-    margin-right:4rem;
+    line-height: 43px;
+    border-radius: 5px;
+    background-color: #000000;
+    color:white;
+  margin-top:1rem;
+   
 }
-/* reducing the size of the social links images */
-.social-links img{
-  width:30%;
-}
+
 /* aligning the text of the footer in the center */
 .footer-elements{
     text-align: center;
@@ -172,26 +185,23 @@ margin-right:2rem;
     display:block;
 }
 
-/* aligning the text of the footer in the center */
-.footer-elements2{
-    text-align: center;
-}
+
 /* ----------------------------------MOBILE VERSION----------------------------------*/
 /* ----------------------------------Portfolio Page----------------------------------*/
 
 .background{
-    
     background-color: #000000;
     padding-left:4rem;
     padding-right:4rem;
-    
-    padding-bottom: 4rem;
+     padding-bottom: 4rem;
 }
 .background h1, h3, h2{
     color:#FFFFFF;
     
 }
 .background h1{
+    border-top: 2px solid #FFFFFF;
+    margin-top:0rem;
     padding-top: 2rem;
     font-size:3rem;
     font-weight: 300;
@@ -213,6 +223,20 @@ margin-right:2rem;
     padding-bottom:2rem;
     padding-top:2rem;
 }
+/* ----------------------------------MOBILE VERSION----------------------------------*/
+/* ----------------------------------Contact Page----------------------------------*/
+.image-container_contact{
+    background: url('../images/image_container_contact.jpeg');
+    background-repeat: no-repeat;
+    width: 100%;
+    display: block;
+    text-align: center;
+    background-size: 100%;
+    height: 300px;
+}
+
+
+
 /* ----------------------------------Tablet VERSION----------------------------------*/
 /* ----------------------------------Home Page----------------------------------*/
 
@@ -258,37 +282,9 @@ margin-right:2rem;
  padding-bottom:2rem;
  
    } 
-/* aligining the paragraph pf contact list to the start*/
-.footer-elements p{
-    text-align: start;   
-}
-/* Applying grid to the footer elements */
-.footer-elements{
-   margin-left:5rem;
-   margin-right:5rem;
-    display:grid;
-    grid-template-columns: repeat(2, 1fr);
-        grid-template-areas:
-            "info socialmedia"          
-}
 
-.contact{
-    grid-area:info;
-}
-.social-links{
-    grid-area:socialmedia;
-    margin-top:5rem;
-}
-/* Reducing the size of the images of the social media area */
-.social-links img{
-    width:40%;
-}
-.second-navigation a:nth-child(1){
-    margin-right:4rem;
-    } 
-    .second-navigation a:hover {
-        border: 1px solid #000000;
-        border-radius:.5rem;
+ .second-navigation a:hover {
+        border-bottom: 1px solid #000000;
         background:#FFFFFF;
         color:#000000;
     }
@@ -306,17 +302,18 @@ margin-right:2rem;
          grid-template-areas:
              "info socialmedia"          
  }
+  /* Taking out the hover of the Logo */
+  .image-logo a:hover{
+    border: 1px solid  #FFFFFF;
+  
+}
  
- .contact{
-     grid-area:info;
- }
- .social-links{
-     grid-area:socialmedia;
-     margin-top:5rem;
- }
+
  /* ----------------------------------Tablet VERSION----------------------------------*/
 /* ----------------------------------Portfolio Page----------------------------------*/
-
+.background h1{
+    border-top:none;
+}
 /* Making the images of the Portfolio page width of 100% */
 .background img{
     width: 100%;
@@ -380,39 +377,8 @@ margin-right:2rem;
    .second-navigation{
        margin-bottom:2rem;
    }
- .contact{
-   display:flex;
-   justify-content: space-around;
-   align-items: center;
-   
- }
- .footer-elements{
-     display:grid;
-     align-items: center;
-     grid-template-rows: repeat(2, 1fr);
-     grid-template-columns: repeat(1, 1fr);
-     grid-template-areas:
-         "info "
-        "socialmedia"          
- }
- .contact{
-     grid-area:info;
-     margin-left:20rem;
-     margin-right:20rem;
- }
- .social-links{
-     grid-area:socialmedia;
-     margin-top:4rem;
-     width:20%;
-     text-align: center;
-    margin-left:auto;
-    margin-right:auto;
- }
 
- .footer-elements p{
-    text-align:center;
- }
-
+ 
 /* ----------------------------------DESKTOP VERSION----------------------------------*/
 /* ----------------------------------About Page----------------------------------*/
 .image-container_about{
@@ -441,5 +407,14 @@ column-gap: 2rem;
 .paragraph2{
     grid-area:paragraph2;
     text-align: left;
+}
+
+
+
+ /* ----------------------------------Desktop VERSION----------------------------------*/
+/* ----------------------------------Portfolio Page----------------------------------*/
+
+.background h1{
+    border-top:none;
 }
 }
