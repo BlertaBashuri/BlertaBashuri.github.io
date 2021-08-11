@@ -369,6 +369,7 @@ font-size:1rem;
 .image-shoppingcart{
         background: url('../images/shopping.jpeg');
         background-repeat: no-repeat;
+        
         width: 100%;
         display: block;
         text-align: center;
@@ -379,6 +380,26 @@ font-size:1rem;
 }
 .texti{
     margin-left:2rem;
+}
+
+/* ----------------------------------Mobile VERSION----------------------------------*/
+/* ----------------------------------Bio Page----------------------------------*/
+.bio-info{
+    width:90%;
+    margin:auto;
+    text-align: center; 
+    margin-top:4rem;
+   
+}
+.bio-img{
+    margin-top:2rem;
+    width:90%;
+
+}
+#footer2{
+    margin-top:1rem;
+    padding-top:3rem;
+    border-top:1px solid  #000000;
 }
 /* ----------------------------------Tablet VERSION----------------------------------*/
 /* ----------------------------------Home Page----------------------------------*/
@@ -504,6 +525,26 @@ grid-template-areas:
     margin-left:4rem;
     margin-right:4rem;
 }
+/* ----------------------------------Tablet VERSION----------------------------------*/
+/* ----------------------------------Bio Page----------------------------------*/
+.backgroundbio {
+    padding-top: 4rem;
+    background-image: url('../images/background8.jpeg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+  .bio-info{
+    padding-bottom:4rem;
+    color:#FFFFFF;
+ }
+.bio-img{
+    margin-top:2rem;
+    width:50%;
+    margin-bottom:2rem;
+    
+}
+
 }
 /* ----------------------------------Desktop VERSION----------------------------------*/
 /* ----------------------------------Home Page----------------------------------*/
@@ -563,6 +604,7 @@ grid-template-areas:
     display: grid;
     margin-right:4rem;
     margin-left:4rem;
+    
 column-gap: 2rem;
      grid-template-columns: repeat(2, 1fr);
      grid-template-areas:
@@ -624,5 +666,37 @@ margin-right:auto;
 /* ----------------------------------Cart Page----------------------------------*/
 .image-shoppingcart{
     height:500px;
+}
+/* ----------------------------------Desktop VERSION----------------------------------*/
+/* ----------------------------------Bio Page----------------------------------*/
+
+
+.bio-img{
+ 
+    width:40%;
+    margin-bottom:4rem;
+    
+}
+.bio_paragraph{
+    display: grid;
+    margin-right:2rem;
+    margin-left:2rem;
+    font-size: 3rem;
+column-gap: 3rem;
+     grid-template-columns: repeat(2, 1fr);
+     grid-template-areas:
+     
+     "paragraph_1 paragraph_2"
+
+}
+.paragraph_1{
+    grid-area:paragraph_1;
+    text-align: left;
+ 
+}
+.paragraph_2{
+    grid-area:paragraph_2;
+    text-align: left;
+    
 }
 }
