@@ -402,7 +402,16 @@ font-size:1rem;
     border-top:1px solid  #000000;
 }
 /* ----------------------------------Mobile VERSION----------------------------------*/
-/* ----------------------------------Bio Page----------------------------------*/
+/* ----------------------------------Paintings Page----------------------------------*/
+.paint-header{
+    text-align: center;
+}
+.paintings div{
+  margin:2rem;
+}
+figcaption{
+    margin-top:0.5rem;
+}
 /* ----------------------------------Tablet VERSION----------------------------------*/
 /* ----------------------------------Home Page----------------------------------*/
 
@@ -546,7 +555,53 @@ grid-template-areas:
     margin-bottom:2rem;
     
 }
+/* ----------------------------------TABLET VERSION----------------------------------*/
+/* ----------------------------------Paintings Page----------------------------------*/
 
+.paintings{
+    display: grid;
+    margin-left:4rem;
+    margin-right:4rem;
+    
+   
+    grid-template-rows: repeat(5, 1fr);
+     grid-template-columns: repeat(2, 1fr);
+     grid-template-areas:
+     
+     "painting_1 painting_2"
+     "painting_3 painting_4"
+     "painting_5 painting_6"
+     "painting_7 painting_8"
+     "painting_9"
+
+}
+.div:nth-child(2){
+    grid-area: painting_1;
+}
+.div:nth-child(3){
+    grid-area: painting_2;
+}
+.div:nth-child(4){
+    grid-area: painting_3;
+}
+.div:nth-child(5){
+    grid-area: painting_4;
+}
+.div:nth-child(6){
+    grid-area: painting_5;
+}
+.div:nth-child(7){
+    grid-area: painting_6;
+}
+.div:nth-child(8){
+    grid-area: painting_7;
+}
+.div:nth-child(9){
+    grid-area: painting_8;
+}
+.div:nth-child(10){
+    grid-area: painting_9;
+}
 }
 /* ----------------------------------Desktop VERSION----------------------------------*/
 /* ----------------------------------Home Page----------------------------------*/
@@ -713,5 +768,47 @@ column-gap: 3rem;
     background-size: 100% 100%;
   
 }
+/* ----------------------------------DESKTOP VERSION----------------------------------*/
+/* ----------------------------------Paintings Page----------------------------------*/
 
+.paintings{
+    display: grid;
+    margin-left:4rem;
+    margin-right:4rem;
+    grid-template-rows: repeat(3, 1fr);
+     grid-template-columns: repeat(3, 1fr);
+     grid-template-areas:
+     
+     "painting_1 painting_2 painting_3"
+     " painting_4 painting_5 painting_6"
+     "painting_7 painting_8 painting_9"
+
+}
+.div:nth-child(2){
+    grid-area: painting_1;
+}
+.div:nth-child(3){
+    grid-area: painting_2;
+}
+.div:nth-child(4){
+    grid-area: painting_3;
+}
+.div:nth-child(5){
+    grid-area: painting_4;
+}
+.div:nth-child(6){
+    grid-area: painting_5;
+}
+.div:nth-child(7){
+    grid-area: painting_6;
+}
+.div:nth-child(8){
+    grid-area: painting_7;
+}
+.div:nth-child(9){
+    grid-area: painting_8;
+}
+.div:nth-child(10){
+    grid-area: painting_9;
+}
 }
