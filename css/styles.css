@@ -401,6 +401,8 @@ font-size:1rem;
     padding-top:3rem;
     border-top:1px solid  #000000;
 }
+/* ----------------------------------Mobile VERSION----------------------------------*/
+/* ----------------------------------Bio Page----------------------------------*/
 /* ----------------------------------Tablet VERSION----------------------------------*/
 /* ----------------------------------Home Page----------------------------------*/
 
@@ -529,7 +531,7 @@ grid-template-areas:
 /* ----------------------------------Bio Page----------------------------------*/
 .backgroundbio {
     padding-top: 4rem;
-    background-image: url('../images/background8.jpeg');
+    background-image: url('../images/background8.png');
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -632,9 +634,7 @@ column-gap: 2rem;
 }
 /* ----------------------------------Desktop VERSION----------------------------------*/
 /* ----------------------------------ContactPage----------------------------------*/
-.contact-content{
-   column-gap: 4rem; 
-}
+
 .image-container_contact{
     height:500px;
 }
@@ -648,9 +648,14 @@ column-gap: 2rem;
    max-width: 1400px;
   
 }
+.contact_list {
+    margin-top:6rem;
+}
 .contact_list h3{
     font-size:1.5rem;
+   
 }
+
 /* ----------------------------------DESKTOP VERSION----------------------------------*/
 /* ----------------------------------Buy Page----------------------------------*/
 .image-shopping{
@@ -699,4 +704,14 @@ column-gap: 3rem;
     text-align: left;
     
 }
+.photo-background{
+    padding-top: 4rem;
+    background-image: url('../images/photobackground-3.png');
+   
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  
+}
+
 }
