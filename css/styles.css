@@ -401,6 +401,19 @@ font-size:1rem;
     padding-top:3rem;
     border-top:1px solid  #000000;
 }
+/* ----------------------------------MOBILE VERSION----------------------------------*/
+/* ----------------------------------Photography Page----------------------------------*/
+.photo-background{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    background-color: #000000;
+   margin-top:1rem;
+   
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  
+}
 /* ----------------------------------Mobile VERSION----------------------------------*/
 /* ----------------------------------Paintings Page----------------------------------*/
 .paint-header{
@@ -759,15 +772,7 @@ column-gap: 3rem;
     text-align: left;
     
 }
-.photo-background{
-    padding-top: 4rem;
-    background-image: url('../images/photobackground-3.png');
-   
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-  
-}
+
 /* ----------------------------------DESKTOP VERSION----------------------------------*/
 /* ----------------------------------Paintings Page----------------------------------*/
 
