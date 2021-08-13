@@ -1,6 +1,11 @@
 * {
     box-sizing: border-box;
 }
+:root {
+    --dark: #343a40;
+    --light: #f8f9fa;
+    --font-family-sans-serif: -apple-system, Roboto, ;
+}
 /* ----------------------------------MOBILE VERSION----------------------------------*/
 /* ----------------------------------Home Page----------------------------------*/
 body{
