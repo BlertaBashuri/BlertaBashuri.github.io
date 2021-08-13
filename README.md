@@ -1,8 +1,9 @@
 # Introduction Web Portfolio Blerta Bashuri 
 This is my first Web Portfolio, and I will admit that it was one of the most enjoyable assignments so far. I can see the difference in how much I have learned and have grown my knowledge in coding. Grateful to Professor Rob for being so patient in teaching us and made us benefit from this course. Thank you so much for facilitating such a positive learning environment!
 Regarding the Webpage:
-- Family font use is MONTSERRAT, one of my favourite fonts, and I think the lines of this font make my page look more professional.
-- Regarding the Web Portfolio, I have used half the images from [title](https://www.unsplash.com) half are my real work for privacy purposes. 
+- Family font use is MONTSERRAT, one of my favourite fonts, and I think the lines of this font make my page look more professional. [Google Fonts](https://fonts.google.com/)
+- Regarding the Web Portfolio, I have used half the images from [Unsplash](https://www.unsplash.com) half are my real work for privacy purposes. 
+-Socialmedia icons [Fontawesome](https://fontawesome.com/)
 
 >"Creativity takes courage."
 
