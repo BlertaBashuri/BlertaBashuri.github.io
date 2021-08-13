@@ -237,6 +237,12 @@ footer .social-links a{
 }
 /* ----------------------------------MOBILE VERSION----------------------------------*/
 /* ----------------------------------Contact Page----------------------------------*/
+.email1{
+    text-decoration: none;
+    font-weight: 400;
+    color:#FFFFFF;
+}
+
 .contact-form{
     margin-left:2rem;
     margin-right:2rem;
