@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <!-- google fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <!-- css style sheet -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Favicon link for the Favicon used -->
+    <link rel="icon" href="favicon_package_v0.16/favicon.ico" />
+    <!-- font awsome icons -->
+    <script src="https://kit.fontawesome.com/c45a672bcc.js" crossorigin="anonymous"></script>
+    <!-- bootstraps script -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
+    </script>
+</head>
+
+<body>
+    <div class="first-container">
+        <!-- Navigation List -->
+        <nav class="navigation">
+            <div>
+                <a class="nav-1" href="about.html">About</a>
+            </div>
+            <div>
+                <a class="nav-1" href="portfolio.html">Portfolio</a>
+            </div>
+
+            <div>
+                <a class="nav-1" href="contact.html">Contact</a>
+            </div>
+
+            <div class="image-logo">
+                <a class="nav-2" href="index.html">
+                    <img src="images/logo.png" alt="" width="120" height="55">
+                </a>
+            </div>
+        </nav>
+        <!-- Background Image with text on Top -->
+        <header>
+            <div class="image-shopping">
+                <blockquote class="center">
+                    <div>
+                        <p>
+                            "Lets colour your Shopping Cart"
+                        </p>
+                        <cite>Blerta Bashuri</cite>
+                    </div>
+                </blockquote>
+            </div>
+        </header>
+    </div>
+    <!-- PAYMENT -->
+
+    <div class="container_contact">
+        <h3 class="pay">Payment</h3>
+        <label class="ac">Accepted Cards</label>
+        <div class="icons">
+            <i class="fa fa-cc-visa"></i>
+            <i class="fa fa-cc-amex"></i>
+            <i class="fa fa-cc-mastercard"></i>
+            <i class="fa fa-cc-discover"></i>
+        </div>
+        <label class="labels_form" for="cardname">Name on Card</label>
+        <input type="text" id="cardname" name="cardname" placeholder="Name ">
+        <label class="labels_form" for="ccnum">Credit card number</label>
+        <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+        <label class="labels_form" for="expmonth">Exp Month</label>
+        <input type="text" id="expmonth" name="expmonth" placeholder="September">
+
+        <label class="labels_form" for="expyear">Exp Year</label>
+        <input type="text" id="expyear" name="expyear" placeholder="2021">
+
+
+        <label class="labels_form" for="cvv">CVV</label>
+        <input type="text" id="cvv" name="cvv" placeholder="352">
+
+
+
+
+        <label class="checku">
+            <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+        </label>
+        <br>
+        <input type="submit" value="Continue to checkout" class="butoni">
+    </div>
+
+    <!-- Footer Section -->
+    <footer id="footer">
+
+        <div class="second-navigation">
+            <a href="index.html">Shop</a>
+      
+            <a href="cart.html">Cart</a>
+          </div>
+        <div class="footer-elements">
+            <div class="social-links">
+                <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                <a href="https://twitter.com/home"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/feed/"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+        <div class="copyright1">
+            <p>© Copyright 2021 Bashuri</p>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+    <!-- Java Scrip before the closing tab -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
