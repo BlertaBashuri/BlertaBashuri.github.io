@@ -425,6 +425,17 @@ font-size:1rem;
 figcaption{
     margin-top:0.5rem;
 }
+/* ----------------------------------Mobile VERSION----------------------------------*/
+/* ----------------------------------Graphic Page----------------------------------*/
+.graphic-header{
+    text-align: center;
+}
+.graphics div{
+  margin:2rem;
+}
+figcaption{
+    margin-top:0.5rem;
+}
 /* ----------------------------------Tablet VERSION----------------------------------*/
 /* ----------------------------------Home Page----------------------------------*/
 
@@ -615,6 +626,44 @@ grid-template-areas:
 .div:nth-child(10){
     grid-area: painting_9;
 }
+/* ----------------------------------TABLET VERSION----------------------------------*/
+/* ----------------------------------Graphic Page----------------------------------*/
+
+.graphics{
+    display: grid;
+    margin-left:4rem;
+    margin-right:4rem;
+    
+   
+    grid-template-rows: repeat(3, 1fr);
+     grid-template-columns: repeat(2, 1fr);
+     grid-template-areas:
+     
+     "graphic_1 graphic_2"
+     "graphic_3 graphic_4"
+     "graphic_5 graphic_6"
+     
+
+}
+.div:nth-child(2){
+    grid-area: graphic_1;
+}
+.div:nth-child(3){
+    grid-area: graphic_2;
+}
+.div:nth-child(4){
+    grid-area: graphic_3;
+}
+.div:nth-child(5){
+    grid-area: graphic_4;
+}
+.div:nth-child(6){
+    grid-area: graphic_5;
+}
+.div:nth-child(7){
+    grid-area: graphic_6;
+}
+
 }
 /* ----------------------------------Desktop VERSION----------------------------------*/
 /* ----------------------------------Home Page----------------------------------*/
@@ -816,4 +865,42 @@ column-gap: 3rem;
 .div:nth-child(10){
     grid-area: painting_9;
 }
+/* ----------------------------------Desktop VERSION----------------------------------*/
+/* ----------------------------------Graphic Page----------------------------------*/
+
+.graphics{
+    display: grid;
+    margin-left:4rem;
+    margin-right:4rem;
+    
+   
+    grid-template-rows: repeat(2, 1fr);
+     grid-template-columns: repeat(3, 1fr);
+     grid-template-areas:
+     
+     "graphic_1 graphic_2"
+     "graphic_3 graphic_4"
+     "graphic_5 graphic_6"
+     
+
+}
+.div:nth-child(2){
+    grid-area: graphic_1;
+}
+.div:nth-child(3){
+    grid-area: graphic_2;
+}
+.div:nth-child(4){
+    grid-area: graphic_3;
+}
+.div:nth-child(5){
+    grid-area: graphic_4;
+}
+.div:nth-child(6){
+    grid-area: graphic_5;
+}
+.div:nth-child(7){
+    grid-area: graphic_6;
+}
+
 }
